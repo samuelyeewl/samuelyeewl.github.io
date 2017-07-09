@@ -42,7 +42,7 @@ then
 fi
 
 # Push to github.
-git push -f -q origin
+git push -f origin
 
 # Move back to previous branch.
 git checkout $currentBranch
