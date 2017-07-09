@@ -1,0 +1,362 @@
+var locations = [
+	{
+		"name": "Singapore, Singapore",
+		"lat": 1.2897,
+		"long": 103.8501,
+	},
+	{
+		"name": "Kuala Lumpur, Malaysia",
+		"lat": 3.1412,
+		"long": 101.6865,
+	},
+	{
+		"name": "Kota Kinabalu, Malaysia",
+		"lat": 5.9749,
+		"long": 116.0724,
+	},
+	{
+		"name": "George Town, Malaysia",
+		"lat": 5.4112,
+		"long": 100.3354,
+	},
+	{
+		"name": "Bangkok, Thailand",
+		"lat": 13.7540,
+		"long": 100.5014,
+	},
+	{
+		"name": "Lombok, Indonesia",
+		"lat": -8.5833,
+		"long": 116.1167,
+	},
+	{
+		"name": "Male, Maldives",
+		"lat": 4.1748,
+		"long": 73.5089,
+	},
+	{
+		"name": "Ho Chi Minh City, Vietnam",
+		"lat": 10.8230,
+		"long": 106.6296,
+	},
+	{
+		"name": "Da Lat, Vietnam",
+		"lat": 11.9465,
+		"long": 108.4419,
+	},
+	{
+		"name": "Hong Kong, Hong Kong",
+		"lat": 22.2783,
+		"long": 114.1747,
+	},
+	{
+		"name": "Tokyo, Japan",
+		"lat": 35.6895,
+		"long": 139.6917,
+	},
+	{
+		"name": "Sapporo, Japan",
+		"lat": 43.0667,
+		"long": 141.3500,
+	},
+	{
+		"name": "London, United Kingdom",
+		"lat": 51.5085,
+		"long": -0.1257,
+	},
+	{
+		"name": "Cambridge, United Kingdom",
+		"lat": 52.2000,
+		"long": 0.1167,
+	},
+	{
+		"name": "Lake District, United Kingdom",
+		"lat": 54.4542,
+		"long": -3.2116
+	},
+	{
+		"name": "Belfast, United Kingdom",
+		"lat": 54.5968,
+		"long": -5.9254,
+	},
+	{
+		"name": "Edinburgh, United Kingdom",
+		"lat": 55.9521,
+		"long": -3.1965,
+	},
+	{
+		"name": "Copenhagen, Denmark",
+		"lat": 55.6759,
+		"long": 12.5655,
+	},
+	{
+		"name": "Amsterdam, Netherlands",
+		"lat": 52.3740,
+		"long": 4.8897,
+	},
+	{
+		"name": "Rotterdam, Netherlands",
+		"lat": 51.9225,
+		"long": 4.4792,
+	},
+	{
+		"name": "The Hague, Netherlands",
+		"lat": 52.0767,
+		"long": 4.2986,
+	},
+	{
+		"name": "Brussels, Belgium",
+		"lat": 50.8505,
+		"long": 4.3488,
+	},
+	{
+		"name": "Brugge, Belgium",
+		"lat": 51.2089,
+		"long": 3.2242,
+	},
+	{
+		"name": "Antwerpen, Belgium",
+		"lat": 51.2199,
+		"long": 4.4035,
+	},
+	{
+		"name": "Paris, France",
+		"lat": 48.8534,
+		"long": 2.3488,
+	},
+	{
+		"name": "Annecy, France",
+		"lat": 45.9000,
+		"long": 6.1167,
+	},
+	{
+		"name": "Geneva, IL, United States",
+		"lat": 41.8875,
+		"long": -88.3054,
+	},
+	{
+		"name": "Koeln, Germany",
+		"lat": 50.9333,
+		"long": 6.9500,
+	},
+	{
+		"name": "Munich, Germany",
+		"lat": 48.1374,
+		"long": 11.5755,
+	},
+	{
+		"name": "Nuernberg, Germany",
+		"lat": 49.4542,
+		"long": 11.0775,
+	},
+	{
+		"name": "Salzburg, Austria",
+		"lat": 47.7994,
+		"long": 13.0440,
+	},
+	{
+		"name": "Santa Cruz de Tenerife, Spain",
+		"lat": 28.4682,
+		"long": -16.2546,
+	},
+	{
+		"name": "Vienna, Austria",
+		"lat": 48.2085,
+		"long": 16.3721,
+	},
+	{
+		"name": "Budapest, Hungary",
+		"lat": 47.4980,
+		"long": 19.0399,
+	},
+	{
+		"name": "Trieste, Italy",
+		"lat": 45.6495,
+		"long": 13.7768,
+	},
+	{
+		"name": "Rome, Italy",
+		"lat": 41.8919,
+		"long": 12.5113,
+	},
+	{
+		"name": "Venice, Italy",
+		"lat": 45.4371,
+		"long": 12.3326,
+	},
+	{
+		"name": "Zagreb, Croatia",
+		"lat": 45.8144,
+		"long": 15.9780,
+	},
+	{
+		"name": "Dubrovnik, Croatia",
+		"lat": 42.6481,
+		"long": 18.0922,
+	},
+	{
+		"name": "Sarajevo, Bosnia-Herzegovina",
+		"lat": 43.8486,
+		"long": 18.3564,
+	},
+	{
+		"name": "Mostar, Bosnia-Herzegovina",
+		"lat": 43.3433,
+		"long": 17.8081,
+	},
+	{
+		"name": "Kotor, Montenegro",
+		"lat": 42.4247,
+		"long": 18.7712,
+	},
+	{
+		"name": "Belgrade, Serbia",
+		"lat": 44.8040,
+		"long": 20.4651,
+	},
+	{
+		"name": "Athens, Greece",
+		"lat": 37.9794,
+		"long": 23.7162,
+	},
+	{
+		"name": "Trikala, Greece",
+		"lat": 39.5549,
+		"long": 21.7684,
+	},
+	{
+		"name": "Istanbul, Turkey",
+		"lat": 41.0138,
+		"long": 28.9497,
+	},
+	{
+		"name": "Los Angeles, CA, United States",
+		"lat": 34.0522,
+		"long": -118.2437,
+	},
+	{
+		"name": "San Francisco, CA, United States",
+		"lat": 37.7749,
+		"long": -122.4194,
+	},
+	{
+		"name": "San Jose, CA, United States",
+		"lat": 37.3394,
+		"long": -121.8950,
+	},
+	{
+		"name": "Mammoth Lakes, CA, United States",
+		"lat": 37.6485,
+		"long": -118.9721,
+	},
+	{
+		"name": "Yosemite National Park, CA, United States",
+		"lat": 37.8651,
+		"long": 119.5383,
+	},
+	{
+		"name": "Death Valley, CA, United States",
+		"lat": 36.5323,
+		"long": -116.9325,
+	},
+	{
+		"name": "Eureka, CA, United States",
+		"lat": 40.8021,
+		"long": -124.1637,
+	},
+	{
+		"name": "San Diego, CA, United States",
+		"lat": 32.7153,
+		"long": -117.1573,
+	},
+	{
+		"name": "Las Vegas, NV, United States",
+		"lat": 36.1750,
+		"long": -115.1372,
+	},
+	{
+		"name": "Zion National Park, UT, United States",
+		"lat": 37.2982,
+		"long": -113.0263,
+	},
+	{
+		"name": "Bryce Canyon National Park, UT, United States",
+		"lat": 37.5930,
+		"long": -112.1871,
+	},
+	{
+		"name": "Capitol Reef National Park, UT, United States",
+		"lat": 38.3670,
+		"long": -111.2615,
+	},
+	{
+		"name": "Arches National Park, UT, United States",
+		"lat": 38.7331,
+		"long": -109.5925,
+	},
+	{
+		"name": "Monument Valley, AZ, United States",
+		"lat": 37.0042,
+		"long": -110.1735,
+	},
+	{
+		"name": "Page, AZ, United States",
+		"lat": 36.9147,
+		"long": -111.4558,
+	},
+	{
+		"name": "Grand Canyon North Rim, AZ, United States",
+		"lat": 36.2135,
+		"long": -112.0581,
+	},
+	{
+		"name": "Portland, OR, United States",
+		"lat": 45.5234,
+		"long": -122.6762,
+	},
+	{
+		"name": "Seattle, WA, United States",
+		"lat": 47.6062,
+		"long": -122.3321,
+	},
+	{
+		"name": "Chicago, IL, United States",
+		"lat": 41.8500,
+		"long": -87.6500,
+	},
+	{
+		"name": "New York City, NY, United States",
+		"lat": 40.7143,
+		"long": -74.0060,
+	},
+	{
+		"name": "Washington D.C., DC, United States",
+		"lat": 38.8951,
+		"long": -77.0364,
+	},
+	{
+		"name": "Perth, Australia",
+		"lat": -31.9522,
+		"long": 115.8614,
+	},
+	{
+		"name": "Gold Coast, Australia",
+		"lat": -28.0003,
+		"long": 153.4309,
+	},
+	{
+		"name": "Auckland, New Zealand",
+		"lat": -36.8485,
+		"long": 174.7635,
+	},
+	{
+		"name": "Wellington, New Zealand",
+		"lat": -41.2866,
+		"long": 174.7756,
+	},
+	{
+		"name": "Christchurch, New Zealand",
+		"lat": -43.5333,
+		"long": 172.6333,
+	},
+]
