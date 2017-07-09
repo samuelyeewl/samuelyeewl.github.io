@@ -12,13 +12,14 @@
 .year {
     border-top: 1px solid $light-gray;
     color: $light-gray;
-    margin: 0 -3em -2.5ex -2em;
+    margin: 0 0 -3.5ex 0;
     padding-top: 1ex;
     text-align: right;
 }
 .bibliography {
     margin-bottom: 50px;
     margin-top: 20px;
+    padding-right: 5rem;
     list-style-type: circle;
 
     li {
