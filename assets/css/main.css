@@ -522,6 +522,13 @@ table > thead > tr > th { vertical-align: bottom; border-bottom: 2px solid #333;
 table > caption + thead > tr:first-child > th, table > caption + thead > tr:first-child > td, table > colgroup + thead > tr:first-child > th, table > colgroup + thead > tr:first-child > td, table > thead:first-child > tr:first-child > th, table > thead:first-child > tr:first-child > td { border-top: 0; }
 table > tbody + tbody { border-top: 2px solid #333; }
 
+#travelmap { margin-left: -3em; }
+#travelmap svg { background: #eee; }
+#travelmap .sphere { fill: #fff; }
+#travelmap .land { fill: #ffd6a5; }
+#travelmap .boundary { fill: none; stroke: #fff; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+#travelmap .overlay { fill: none; pointer-events: all; }
+
 html { font-size: 16px; }
 
 body { color: #666; font-weight: 100; }

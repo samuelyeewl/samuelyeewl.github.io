@@ -33,9 +33,10 @@ git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
 git checkout master
 
 # Merge in changes
-git merge -X theirs gh-pages
+git merge -X theirs -m "$(git log -1 --pretty=%B) [ci skip]" gh-pages
 
-if [`git ls-files -u`] then
+if [ `git ls-files -u` ]
+then
 	echo "Could not merge into master"
 	exit 1
 fi

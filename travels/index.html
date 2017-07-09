@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Samuel Yee | research</title>
+  <title>Samuel Yee | travels</title>
   <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
 
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/research/">
+  <link rel="canonical" href="/travels/">
 </head>
 
 
@@ -85,28 +85,14 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">research</h1>
-    <h5 class="post-description">Some of my research interests.</h5>
+    <h1 class="post-title">travels</h1>
+    <h5 class="post-description">the places i've visited</h5>
   </header>
 
-  <article class="post-content research clearfix">
-    
-<div class="section">
-	<h3>SpecMatch-Emp</h3>
-	
-		<img class="half right" src="/assets/img/specmatch-emp.png" />
-	
-	<p>Over the last year, I worked with <a href="https://petigura.github.io/">Erik Petigura</a> on a new tool for characterizing stars based on their spectra, by comparing them to a library of high resolution, high signal-to-noise spectra. The library comprises previously well-characterized stars, and we synthesise combinations of these library spectra to best match the target. We found this algorithm to be highly robust, working particularly well with late-type stars which have a wealth of information in their spectra. The code can be found <a href="https://github.com/samuelyeewl/specmatch-emp/">here</a>, and documentation <a href="http://specmatch-emp.readthedocs.io">here</a>.</p>
-
-</div>
-
-
+  <article class="post-content travels clearfix">
+    <svg id="travelmap">
+	</svg>
   </article>
-
-  
-
-  
-
 </div>
 
       </div>
@@ -141,6 +127,20 @@
 
 <!-- Include custom javascript -->
 
+	
+	<script src="http://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+	
+	<script src="http://d3js.org/topojson.v1.min.js" type="text/javascript"></script>
+	
+	<script src="http://d3js.org/d3.geo.projection.v0.min.js" type="text/javascript"></script>
+	
+
+
+	
+	<script src="/assets/js/locations.json" type="text/javascript"></script>
+	
+	<script src="/assets/js/travel_map.js" type="text/javascript"></script>
+	
 
 
 <!-- Google Analytics -->
