@@ -130,9 +130,9 @@ var locations = [
 		"long": 6.1167,
 	},
 	{
-		"name": "Geneva, IL, United States",
-		"lat": 41.8875,
-		"long": -88.3054,
+		"name": "Geneve, Switzerland",
+		"lat": 46.2022,
+		"long": 6.1457,
 	},
 	{
 		"name": "Koeln, Germany",
