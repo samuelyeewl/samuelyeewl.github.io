@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"styl",
+				"stylesheet"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
 				"phys",
 				"phys_vsini\tstatement"
 			],
@@ -502,37 +514,60 @@
 			[
 				"id",
 				"idxmax"
-			],
-			[
-				"whi",
-				"whigh"
-			],
-			[
-				"sp",
-				"specmatchio"
-			],
-			[
-				"tar",
-				"targ_label"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "Gemfile",
+			"file": "_config.yml",
 			"settings":
 			{
-				"buffer_size": 933,
+				"buffer_size": 3241,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/social.html",
+			"settings":
+			{
+				"buffer_size": 818,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": ".gitignore",
+			"file": "_layouts/album.html",
 			"settings":
 			{
-				"buffer_size": 51,
+				"buffer_size": 812,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_sass/_publications.scss",
+			"settings":
+			{
+				"buffer_size": 2250,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_pages/research.md",
+			"settings":
+			{
+				"buffer_size": 407,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_sass/_pages.scss",
+			"settings":
+			{
+				"buffer_size": 236,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -607,10 +642,67 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/samuel/webpage"
+		"/Users/samuel/webpage",
+		"/Users/samuel/webpage/_sass",
+		"/Users/samuel/webpage/_sass/basscss",
+		"/Users/samuel/webpage/assets",
+		"/Users/samuel/webpage/assets/img"
 	],
 	"file_history":
 	[
+		"/Users/samuel/webpage/_includes/header.html",
+		"/Users/samuel/webpage/_sass/_header.scss",
+		"/Users/samuel/webpage/_sass/_research.scss",
+		"/Users/samuel/webpage/_sass/_variables.scss",
+		"/Users/samuel/webpage/_pages/travels.md",
+		"/Users/samuel/webpage/_albums/street.md",
+		"/Users/samuel/webpage/blog/index.html",
+		"/Users/samuel/webpage/_sass/_albums.scss",
+		"/Users/samuel/webpage/bin/deploy",
+		"/Users/samuel/webpage/_pages/research.md",
+		"/Users/samuel/webpage/_pages/projects.md",
+		"/Users/samuel/webpage/_pages/photographs.md",
+		"/Users/samuel/webpage/_layouts/album.html",
+		"/Users/samuel/webpage/assets/css/main.scss",
+		"/Users/samuel/webpage/_albums/sf.md",
+		"/Users/samuel/webpage/_includes/hemline.html",
+		"/Users/samuel/webpage/_layouts/page.html",
+		"/Users/samuel/webpage/_pages/about.md",
+		"/Users/samuel/webpage/_layouts/travels.html",
+		"/Users/samuel/Dropbox/cities/cities/out.json",
+		"/Users/samuel/webpage/_sass/_travelmap.scss",
+		"/Users/samuel/webpage/assets/js/locations.json",
+		"/Users/samuel/webpage/assets/js/travel_map.js",
+		"/Users/samuel/Dropbox/cities/cities/list.txt",
+		"/Users/samuel/Dropbox/cities/cities/cities.txt",
+		"/Users/samuel/Dropbox/cities/cities/cities.py",
+		"/Users/samuel/Dropbox/cities/cities/cities_to_json.py",
+		"/Users/samuel/Dropbox/cities/cities/cities_old.txt",
+		"/Users/samuel/Dropbox/cities/cities/cities_list.txt",
+		"/Users/samuel/webpage/_data/locations.json",
+		"/Users/samuel/webpage/index.html",
+		"/Users/samuel/webpage/_layouts/about.html",
+		"/Users/samuel/webpage/feed.xml",
+		"/Users/samuel/webpage/_site/feed.xml",
+		"/Users/samuel/webpage/_config.yml",
+		"/Users/samuel/webpage/_research/specmatch-emp.md",
+		"/Users/samuel/webpage/_site/assets/css/main.css",
+		"/Users/samuel/webpage/_sass/_gallery.scss",
+		"/Users/samuel/webpage/_layouts/research.html",
+		"/Users/samuel/webpage/_layouts/default.html",
+		"/Users/samuel/webpage/_layouts/bib.html",
+		"/Users/samuel/webpage/_site/2015/03/15/formatting-and-links.html",
+		"/Users/samuel/webpage/_sass/_publications.scss",
+		"/Users/samuel/webpage/_pages/publications.md",
+		"/Users/samuel/webpage/Gemfile",
+		"/Users/samuel/webpage/_sass/_posts.scss",
+		"/Users/samuel/webpage/_includes/social.html",
+		"/Users/samuel/webpage/_bibliography/papers.bib",
+		"/Users/samuel/Downloads/IOPEXPORT_BIB.bib",
+		"/Users/samuel/webpage/.gitignore",
+		"/Users/samuel/webpage/Gemfile.lock",
+		"/Users/samuel/webpage/_site/Gemfile.lock",
+		"/Users/samuel/Downloads/al-folio-master/Gemfile",
 		"/Users/samuel/SpecMatch-Emp/specmatchemp/kernels.py",
 		"/Users/samuel/SpecMatch-Emp/specmatchemp/plots.py",
 		"/Users/samuel/SpecMatch-Emp/parallel/match_script.sh",
@@ -685,70 +777,20 @@
 		"/Users/samuel/SpecMatch-Emp/lib/lib_mask.csv",
 		"/Users/samuel/SpecMatch-Emp/catalogs/spocsii_stars.csv",
 		"/Users/samuel/SpecMatch-Emp/catalogs/Casagrande_2006.dat",
-		"/Users/samuel/SpecMatch-Emp/catalogs/brewer_add_mask.csv",
-		"/Users/samuel/SpecMatch-Emp/catalogs/brewer_cut.csv",
-		"/Users/samuel/SpecMatch-Emp/libdata.tex",
-		"/Users/samuel/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
-		"/Users/samuel/SpecMatch-Emp/catalogs/kdwarfs.csv",
-		"/Users/samuel/Dropbox/SpecMatch-Emp/VonBraun/gaidos13_n=23/kdwarfs.csv",
-		"/Users/samuel/SpecMatch-Emp/results/GL699/GL699_results.txt",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/buildlib/shift_spectrum.py",
-		"/Users/samuel/SpecMatch-Emp/lib/telluric_mask_old.csv",
-		"/Users/samuel/SpecMatch-Emp/catalogs/brewer.csv",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/plotting/plot_library_match.py",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/plotting/plot_lincomb.py",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/plotting/plot_library_lincomb.py",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/plotting/plot_shifts.py",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/analysis.py",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/plotting/plot_match.py",
-		"/Users/samuel/SpecMatch-Emp/lib/libstars_kd.csv",
-		"/Users/samuel/SpecMatch-Emp/build/lib/specmatchemp/plotting/plot_shifts.py",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/io/h5plus.py",
-		"/Users/samuel/SpecMatch-Emp/j123.311_shifts.pdf",
-		"/Users/samuel/SpecMatch-Emp/bin/smemp",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/buildlib/shift_library.py",
-		"/Users/samuel/SpecMatch-Emp/samples/rj130.2075.fits",
-		"/Users/samuel/Dropbox/SpecMatch-Emp/spectra/shift_refs.txt",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/buildlib/buildlib.sh",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/plotting/plot_library.py",
-		"/Users/samuel/SpecMatch-Emp/docs/specmatch.rst",
-		"/Users/samuel/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings",
-		"/Users/samuel/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/samuel/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/specmatch.sublime-project",
-		"/Users/samuel/Dropbox/SpecMatch-Emp/show_bootstrap_success.py",
-		"/Users/samuel/Dropbox/SpecMatch-Emp/spectra/shift_reference.csv",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/plotting/plots.py",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/plotting/plot_lincomb_new.py",
-		"/Users/samuel/SpecMatch-Emp/results/lincomb_results.csv",
-		"/Users/samuel/SpecMatch-Emp/results/166/166_lincomb5_match.csv",
-		"/Users/samuel/Dropbox/SpecMatch-Emp/kdwarfs_list.csv",
-		"/Users/samuel/SpecMatch-Emp/bin/specmatch.py",
-		"/Users/samuel/SpecMatch-Emp/docs/Makefile",
-		"/Users/samuel/SpecMatch-Emp/buildlib/shift_spectrum.py",
-		"/Users/samuel/SpecMatch-Emp/buildlib/read_catalogs.py",
-		"/Users/samuel/SpecMatch-Emp/buildlib/get_isochrones.py",
-		"/Users/samuel/SpecMatch-Emp/buildlib/combine_library.py",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/io/pdplus.py",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/shift_spectra.py",
-		"/Users/samuel/SpecMatch-Emp/MANIFEST.in",
-		"/Users/samuel/SpecMatch-Emp/SpecMatch_Emp.egg-info/requires.txt",
-		"/Users/samuel/SpecMatch-Emp/specmatchemp/script.py",
-		"/Users/samuel/mnt/fram/parallel/plot_library_lincomb.txt",
-		"/Users/samuel/SpecMatch-Emp/buildlib/generate_shift_script.py",
-		"/Users/samuel/SpecMatch-Emp/buildlib/buildlib.sh",
-		"/Users/samuel/SpecMatch-Emp/tests/scripts.sh",
-		"/Users/samuel/SpecMatch-Emp/tests/match_average_analysis.py"
+		"/Users/samuel/SpecMatch-Emp/catalogs/brewer_add_mask.csv"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
 		"height": 93.0,
 		"where_history":
 		[
+			"",
+			"<current file>",
+			"",
 			"/Users/samuel/SpecMatch-Emp/specmatchemp",
 			"",
 			"/Users/samuel/SpecMatch-Emp/specmatchemp",
@@ -760,6 +802,34 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".wrapper",
+			"-3em",
+			"page-content",
+			";\n",
+			"prepend",
+			"glasgow",
+			"countries",
+			"usstates",
+			"cities",
+			"us_state",
+			"33.33%",
+			"one",
+			"$one",
+			".one",
+			".col",
+			"col",
+			"float",
+			"@import",
+			"blog",
+			"heading-font-family",
+			"helvetic",
+			"body",
+			"site-header",
+			".site-title",
+			"1.25rem",
+			"font-awesome",
+			"jekyll",
+			"contact_note",
 			"best_params",
 			"S5000",
 			"chisq",
@@ -859,35 +929,7 @@
 			"snr",
 			"lsquni",
 			"correlate",
-			"iloc",
-			"read_kdw",
-			"kdwarf",
-			"csv",
-			"fig.set_",
-			"set_tight_layout",
-			"results_nod",
-			"results_no",
-			"mask_tab",
-			"num_sections",
-			"shift_data",
-			"plot_shift_data",
-			"plot_le",
-			"plotlevel",
-			"plot_shif",
-			"attrs",
-			"new_row['obs']",
-			"query_result.obs.values",
-			"str)",
-			"sys",
-			"tight_layout",
-			"set_tightlayout",
-			"re.search",
-			"results_no",
-			"detrend",
-			"self.num_",
-			"read_hirs",
-			"results",
-			"bootstra"
+			"iloc"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -895,6 +937,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"__countries__",
+			"__usstates__",
+			"__cities__",
 			"new_row['lib_obs']",
 			"query_result.iloc[0]['obs']",
 			"Library.STAR_PROPS",
@@ -926,52 +971,171 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Gemfile",
+					"file": "_config.yml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 933,
+						"buffer_size": 3241,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								793,
-								793
+								2284,
+								2284
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 28.0,
+						"translation.y": 109.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_includes/social.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 818,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								476,
+								476
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_layouts/album.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 812,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								812,
+								812
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_sass/_publications.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2250,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								453,
+								453
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 93.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": ".gitignore",
+					"buffer": 4,
+					"file": "_pages/research.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 51,
+						"buffer_size": 407,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								51,
-								51
+								350,
+								350
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_sass/_pages.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
 							]
 						],
 						"settings":
@@ -982,7 +1146,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1040,6 +1204,162 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"rese",
+				"_pages/research.md"
+			],
+			[
+				"publi",
+				"_sass/_publications.scss"
+			],
+			[
+				"vari",
+				"_sass/_variables.scss"
+			],
+			[
+				"_rese",
+				"_sass/_research.scss"
+			],
+			[
+				"page.",
+				"_sass/_pages.scss"
+			],
+			[
+				"header.",
+				"_sass/_header.scss"
+			],
+			[
+				"soci",
+				"_includes/social.html"
+			],
+			[
+				"albu",
+				"_layouts/album.html"
+			],
+			[
+				"album",
+				"_layouts/album.html"
+			],
+			[
+				"bin/",
+				"bin/deploy"
+			],
+			[
+				"main.c",
+				"assets/css/main.scss"
+			],
+			[
+				"projects",
+				"_sass/_projects.scss"
+			],
+			[
+				"projec",
+				"_pages/projects.md"
+			],
+			[
+				"page",
+				"_layouts/page.html"
+			],
+			[
+				"heml",
+				"_includes/hemline.html"
+			],
+			[
+				"trave",
+				"_pages/travels.md"
+			],
+			[
+				"travel",
+				"_pages/travels.md"
+			],
+			[
+				"confi",
+				"_config.yml"
+			],
+			[
+				"locat",
+				"assets/js/locations.json"
+			],
+			[
+				"loc",
+				"assets/js/locations.json"
+			],
+			[
+				"page.h",
+				"_layouts/page.html"
+			],
+			[
+				"travelmap.",
+				"_sass/_travelmap.scss"
+			],
+			[
+				"main.",
+				"assets/css/main.scss"
+			],
+			[
+				"resear",
+				"_pages/research.md"
+			],
+			[
+				"hem",
+				"_includes/hemline.html"
+			],
+			[
+				"about.m",
+				"_pages/about.md"
+			],
+			[
+				"about",
+				"_layouts/about.html"
+			],
+			[
+				"_site/fee",
+				"_site/feed.xml"
+			],
+			[
+				"feed",
+				"feed.xml"
+			],
+			[
+				"config",
+				"_config.yml"
+			],
+			[
+				"galler",
+				"_sass/_gallery.scss"
+			],
+			[
+				"main",
+				"_site/assets/css/main.css"
+			],
+			[
+				"research",
+				"_sass/_research.scss"
+			],
+			[
+				"conf",
+				"_config.yml"
+			],
+			[
+				"proje",
+				"_pages/projects.md"
+			],
+			[
+				"bib",
+				"_layouts/bib.html"
+			],
+			[
+				"publica",
+				"_sass/_publications.scss"
+			],
+			[
+				"header",
+				"_includes/header.html"
+			],
+			[
+				"varia",
+				"_sass/_variables.scss"
+			],
 			[
 				"kern",
 				"specmatchemp/kernels.py"
@@ -1131,10 +1451,6 @@
 			[
 				"rtd",
 				"rtd-requirements.txt"
-			],
-			[
-				"conf",
-				"docs/conf.py"
 			],
 			[
 				"libra",
@@ -1399,158 +1715,6 @@
 			[
 				"casa",
 				"catalogs/Casagrande_2006.dat"
-			],
-			[
-				"__in",
-				"specmatchemp/__init__.py"
-			],
-			[
-				"setu",
-				"setup.py"
-			],
-			[
-				"tests/no",
-				"tests/noise_spec.py"
-			],
-			[
-				"utils",
-				"specmatchemp/utils/utils.py"
-			],
-			[
-				"shif",
-				"specmatchemp/shift.py"
-			],
-			[
-				"brewr",
-				"catalogs/brewer_add_mask.csv"
-			],
-			[
-				"buildlib",
-				"specmatchemp/buildlib/combine_library.py"
-			],
-			[
-				"brewer_cut",
-				"catalogs/brewer_cut.csv"
-			],
-			[
-				"brewer_",
-				"catalogs/brewer_add.csv"
-			],
-			[
-				"libda",
-				"libdata.tex"
-			],
-			[
-				"cpsuti",
-				"specmatchemp/utils/cpsutils.py"
-			],
-			[
-				"read_",
-				"specmatchemp/buildlib/read_catalogs.py"
-			],
-			[
-				"iso",
-				"specmatchemp/buildlib/get_isochrones.py"
-			],
-			[
-				"build_l",
-				"specmatchemp/buildlib/combine_library.py"
-			],
-			[
-				"cor",
-				"specmatchemp/core.py"
-			],
-			[
-				"cpsut",
-				"specmatchemp/utils/cpsutils.py"
-			],
-			[
-				"kdwarfs",
-				"catalogs/kdwarfs.csv"
-			],
-			[
-				"set",
-				"setup.py"
-			],
-			[
-				"resul",
-				"results/GL699/GL699_results.txt"
-			],
-			[
-				"generate_s",
-				"specmatchemp/buildlib/generate_shift_script.py"
-			],
-			[
-				"combine_lib",
-				"specmatchemp/buildlib/combine_library.py"
-			],
-			[
-				"shift_spe",
-				"specmatchemp/buildlib/shift_spectrum.py"
-			],
-			[
-				"tel",
-				"lib/telluric_mask.csv"
-			],
-			[
-				"get_i",
-				"specmatchemp/buildlib/get_isochrones.py"
-			],
-			[
-				"spe",
-				"specmatchemp/spectrum.py"
-			],
-			[
-				"shift_sp",
-				"specmatchemp/buildlib/shift_spectrum.py"
-			],
-			[
-				"cpsi",
-				"specmatchemp/utils/cpsutils.py"
-			],
-			[
-				"plot_lin",
-				"specmatchemp/plotting/plot_lincomb.py"
-			],
-			[
-				"plot_li",
-				"specmatchemp/plotting/plot_library_match.py"
-			],
-			[
-				"lincomb_li",
-				"tests/lincomb_library_spectrum.py"
-			],
-			[
-				"combine_m",
-				"tests/combine_match_results.py"
-			],
-			[
-				"quc",
-				"docs/quickstart.py"
-			],
-			[
-				"plot_lib",
-				"specmatchemp/plotting/plot_library_lincomb.py"
-			],
-			[
-				"quickst",
-				"docs/quickstart.py"
-			],
-			[
-				"buil",
-				"docs/build-library.rst"
-			],
-			[
-				"plot_shi",
-				"specmatchemp/plotting/plot_shifts.py"
-			],
-			[
-				"installation",
-				"docs/installation.rst"
-			],
-			[
-				"isochrones",
-				"specmatchemp/buildlib/get_isochrones.py"
 			]
 		],
 		"width": 0.0
