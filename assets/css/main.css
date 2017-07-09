@@ -379,8 +379,7 @@ footer a:hover { color: #0076df; }
 .album .thumbnail a span p { color: #e8e8e8; }
 .album .thumbnail a:hover span { display: block; }
 
-.profile { float: right !important; }
-.profile img { box-shadow: 0 0 5px #828282; width: 100%; }
+.profile { float: right !important; margin-right: 1em img; margin-right-box-shadow: 0 0 5px #828282; margin-right-width: 100%; }
 
 .address { font-family: monospace; }
 .address p { margin: 0; }
