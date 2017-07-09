@@ -63,6 +63,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  albums:
+    output: true
+    permalink: /albums/:path/
 
 news_limit: 5
 

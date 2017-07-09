@@ -23,9 +23,24 @@
 <!-- Include custom icon fonts -->
 <link rel="stylesheet" href="{{ '/assets/css/font-awesome.min.css' | prepend: site.baseurl | prepend: site.url }}">
 <link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | prepend: site.baseurl | prepend: site.url }}">
+
+<!-- Include custom font -->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Open+Sans:400,400i,700" />
 
-<!-- Include custom javascript -->
+<!-- Include layout-specific links -->
+{% if layout.ext_css %}
+	{% for style_file in layout.ext_css %}
+	<link href="{{ style_file }}" rel= "stylesheet">
+	{% endfor %}
+{% endif %}
+{% if layout.ext_js %}
+	{% for js_file in layout.ext_js %}
+	<script src="{{ js_file }}" type="text/javascript"></script>
+	{% endfor %}
+{% endif %}
+
+
+<!-- Include page-specific javascript -->
 {% if page.ext_js %}
 	{% for js_file in page.ext_js %}
 	<script src="{{ js_file }}" type="text/javascript"></script>

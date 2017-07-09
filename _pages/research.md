@@ -2,7 +2,7 @@
 layout: page
 title: research
 permalink: /research/
-description: Some of my research interests.
+description: some of my research interests.
 ---
 
 {% for project in site.research %}
