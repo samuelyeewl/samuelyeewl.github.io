@@ -370,6 +370,15 @@ footer a:hover { color: #0076df; }
 .project .thumbnail a span p { color: #e8e8e8; }
 .project .thumbnail a:hover span { display: block; }
 
+.album { box-sizing: border-box; float: left; height: 250px; vertical-align: middle; width: 50%; }
+.album .thumbnail { overflow: hidden; height: 250px; width: 100%; }
+.album .thumbnail img { height: auto; position: relative; left: -20%; top: -5%; width: 500px; }
+.album .thumbnail a { float: left; height: 250px; position: relative; width: 100%; }
+.album .thumbnail a span { display: none; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: rgba(0, 0, 0, 0.4); color: #e8e8e8; padding: 0; text-align: center; }
+.album .thumbnail a span h1 { line-height: 230px; font-size: 1.5rem; margin: 0; }
+.album .thumbnail a span p { color: #e8e8e8; }
+.album .thumbnail a:hover span { display: block; }
+
 .profile { float: right !important; }
 .profile img { box-shadow: 0 0 5px #828282; width: 100%; }
 
