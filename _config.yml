@@ -6,7 +6,7 @@ email: syee@caltech.edu
 description: > # this means to ignore newlines until "url:"
   Samuel Yee's webpage.
 footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
 url:  # the base hostname & protocol for your site
@@ -66,6 +66,9 @@ collections:
   albums:
     output: true
     permalink: /albums/:path/
+  stories:
+    output: true
+    permalink: /stories/:path/
 
 news_limit: 5
 
