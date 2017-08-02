@@ -33,7 +33,7 @@ git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
 git checkout master
 
 # Merge in changes
-git merge -X theirs -m "$(git log develop -1 --pretty=%B) [ci skip]" gh-pages
+git merge -X theirs -m "Merge build into master [ci skip]" gh-pages
 
 if [ `git ls-files -u` ]
 then
