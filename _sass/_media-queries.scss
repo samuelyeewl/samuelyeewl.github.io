@@ -16,10 +16,6 @@
     margin-top: 0;
   }
 
-  .site-header a {
-    font-size: $h4;
-  }
-
   .site-header .site-title {
     font-size: $h3;
     float: left;
@@ -60,4 +56,10 @@
     max-width: $measure-width + 14;
     margin-left: -7em;
   }
+}
+
+@media (min-width: 450px) {
+    .album {
+        width: 50%;
+    }
 }
