@@ -27,7 +27,7 @@
 
   blockquote {
     margin-left: $space-3;
-    padding: $space-3;
+    padding: $space-2 0 $space-2 $space-3;
   }
 
   .social-icons-left {
@@ -58,8 +58,8 @@
   }
 }
 
-@media (min-width: 450px) {
-    .album {
+@media screen and (min-width: 450px) {
+    .album-link {
         width: 50%;
     }
 }

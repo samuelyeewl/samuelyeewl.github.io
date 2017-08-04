@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="story-header full-width">
+      <img src="{{ page.cover | prepend: site.baseurl | prepend: site.url }}" />
+      <div class="overlay">
+        <div class="story-info">
+        <h1 class="story-title">{{ page.title }}</h1>
+        {% if page.description %}
+        <p class="story-desc">{{ page.description }}</p>
+        {% endif %}
+        <p class="story-date">
+          {{ page.date | date: "%B" }}
+          {% assign day = page.date | date: "%-d"  %}
+          {% case day %}
+            {% when '1' or '21' or '31' %}{{ day }}st,
+            {% when '2' or '22' %}{{ day }}nd,
+            {% when '3' or '23' %}{{ day }}rd,
+            {% else %}{{ day }}th,
+          {% endcase %}
+          {{ page.date | date: "%Y" }}
+        </p>
+        </div>
+      </div>
+  </header>
+
+  <article class="story-content">
+    {{ content }}
+  </article>
+
+  <div class="footnotes">
+  {% if page.camera %}
+  <i class="fa fa-camera-retro fa-lg"></i> {{ page.camera }}
+  <br />
+  {% endif %}
+  {% if page.location %}
+  <i class="fa fa-location-arrow fa-lg"></i> {{ page.location }}
+  {% endif %}
+  </div>
+
+</div>
