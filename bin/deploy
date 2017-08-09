@@ -36,7 +36,7 @@ mv _site/* .
 rm -R _site/
 
 # Commit
-git add -fA
+git add -A
 git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
 
 # Checkout master
