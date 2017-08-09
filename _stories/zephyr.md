@@ -1,7 +1,7 @@
 ---
 layout: story
-title: Riding the Transcontinental Railroad
-permalink: /riding-the-transcontinental-railroad/
+title: Riding the transcontinental railroad
+permalink: /stories/riding-the-transcontinental-railroad/
 date: 2015-09-20
 description: San Francisco to Chicago on the California Zephyr
 cover: DSCF2172

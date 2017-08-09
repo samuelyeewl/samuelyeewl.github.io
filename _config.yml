@@ -85,7 +85,7 @@ highlighter: pygments
 include: ['_pages']
 
 # Excludes
-exclude: ['Gruntfile', 'package.json', 'images', 'node_modules']
+exclude: ['Gruntfile', 'package.json', 'images', 'node_modules', '_draft*']
 
 # Plugins
 plugins:
