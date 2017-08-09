@@ -1,5 +1,5 @@
 <!-- Load jQuery -->
-<script async src="//code.jquery.com/jquery-{{ site.jquery_version }}.min.js"></script>
+<script src="//code.jquery.com/jquery-{{ site.jquery_version }}.min.js"></script>
 
 <!-- Load Common JS -->
 <script async src="{{ '/assets/js/common.js' | prepend: site.baseurl | prepend: site.url }}"></script>
@@ -35,7 +35,7 @@
 {% endif %}
 {% if layout.ext_js %}
 	{% for js_file in layout.ext_js %}
-	<script async src="{{ js_file }}" type="text/javascript"></script>
+	<script src="{{ js_file }}" type="text/javascript"></script>
 	{% endfor %}
 {% endif %}
 

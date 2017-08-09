@@ -83,6 +83,9 @@ highlighter: pygments
 # Includes
 include: ['_pages']
 
+# Excludes
+exclude: ['Gruntfile', 'package.json', 'images', 'node_modules']
+
 # Plugins
 plugins:
     - jekyll-paginate
