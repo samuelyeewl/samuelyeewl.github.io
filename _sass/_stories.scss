@@ -131,6 +131,7 @@
         letter-spacing: 4px;
         font-size: 5vw;
         line-height: 6vw;
+        margin-bottom: 2vw;
     }
 
     .story-desc {
@@ -139,6 +140,7 @@
     }
 
     .story-date {
+        margin-top: 4vw;
         font-size: 1.5vw;
     }
 }
@@ -146,7 +148,7 @@
 .story-content {
     p {
         letter-spacing: 0.01rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 2rem;
         margin-top: 6rem;
     }

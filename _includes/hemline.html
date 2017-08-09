@@ -1,19 +1,19 @@
 <!-- Load jQuery -->
-<script src="//code.jquery.com/jquery-{{ site.jquery_version }}.min.js"></script>
+<script async src="//code.jquery.com/jquery-{{ site.jquery_version }}.min.js"></script>
 
 <!-- Load Common JS -->
-<script src="{{ '/assets/js/common.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+<script async src="{{ '/assets/js/common.js' | prepend: site.baseurl | prepend: site.url }}"></script>
 
 {% if site.enable_katex %}
 <!-- Load KaTeX -->
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/{{ site.katex_version }}/katex.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/{{ site.katex_version }}/katex.min.js"></script>
-<script src="{{ '/assets/js/katex.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/{{ site.katex_version }}/katex.min.js"></script>
+<script async src="{{ '/assets/js/katex.js' | prepend: site.baseurl | prepend: site.url }}"></script>
 {% endif %}
 
 {% if site.enable_anchorjs %}
 <!-- Load Anchor JS -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/{{ site.anchorjs_version }}/anchor.min.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/{{ site.anchorjs_version }}/anchor.min.js"></script>
 <script>
   anchors.options.visible = 'always';
   anchors.add('article h2, article h3, article h4, article h5, article h6');
@@ -25,7 +25,7 @@
 <link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | prepend: site.baseurl | prepend: site.url }}">
 
 <!-- Include custom font -->
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Poppins:600|Cormorant:400,300i|Merriweather:400,400i" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Poppins:600|Cormorant:400,300i|'Libre+Baskerville':400,400i" />
 
 <!-- Include layout-specific links -->
 {% if layout.ext_css %}
@@ -35,7 +35,7 @@
 {% endif %}
 {% if layout.ext_js %}
 	{% for js_file in layout.ext_js %}
-	<script src="{{ js_file }}" type="text/javascript"></script>
+	<script async src="{{ js_file }}" type="text/javascript"></script>
 	{% endfor %}
 {% endif %}
 

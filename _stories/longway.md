@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: story
 title: Going Home the Long Way Around
 permalink: /the-long-way-around/
 date: 2015-08-21
