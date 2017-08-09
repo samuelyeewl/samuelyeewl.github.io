@@ -9,15 +9,13 @@ ext_js:
 	<header class="post-header">
     	<h1 class="post-title">{{ page.title }}</h1>
   	</header>
-	<div class="post-content fotorama clearfix" data-nav="thumbs" data-thumbheight="64", data-thumbwidth="96">
-	{% assign album_path = page.title | prepend: "assets/img/albums/" %}
-	{% for image in site.static_files %}
-		{% if image.path contains album_path %}
-		{% unless image.path contains "thumb" %}
-			{% assign thumb_path = image.path | remove: ".jpg" | append: "_thumb.jpg" %}
-			<a href="{{ site.baseurl }}{{ image.path }}"><img src="{{ thumb_path }}"></a>
-		{% endunless %}
-		{% endif %}
+	<div class="post-content fotorama clearfix" data-nav="thumbs" data-thumbheight="64" data-thumbwidth="96"
+		data-keyboard="true" data-autoplay="8000">
+	{% assign album_path = page.title | prepend: "/img/albums/" | prepend: site.asset_path | append: "/" %}
+	{% for image in page.images %}
+		{% assign image_path = image.image_path | prepend: album_path | append: ".jpg" %}
+		{% assign thumb_path = image.image_path | prepend: album_path | append: "_thumb.jpg" %}
+		<a href="{{ image_path }}"><img src="{{ thumb_path }}"></a>
 	{% endfor %}
 	</div>
 </div>
