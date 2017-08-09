@@ -1,3 +1,7 @@
+_site
+images
+node_modules
+
 .sass-cache
 .jekyll-metadata
 .sublime-project
