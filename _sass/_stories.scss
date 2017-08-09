@@ -128,20 +128,47 @@
     }
 
     .story-title {
-        letter-spacing: 4px;
-        font-size: 5vw;
-        line-height: 6vw;
+        letter-spacing: 2px;
+        font-size: 2.2em;
+        line-height: 1.2em;
         margin-bottom: 2vw;
     }
 
     .story-desc {
-        margin: 2vw 0 4vw 0;
-        font-size: 2.5vw;
+        margin: 2vw 0 2vw 0;
+        font-size: 1.3em;
     }
 
     .story-date {
-        margin-top: 4vw;
-        font-size: 1.5vw;
+        margin-top: 2vw;
+        font-size: 1em;
+    }
+
+    @media screen and (min-width: $viewport-small) {
+        .story-title {
+            letter-spacing: 4px;
+            line-height: 6vw;
+            margin-bottom: 2vw;
+        }
+        .story-desc {
+            margin-bottom: 4vw;
+        }
+
+        .story-date {
+            margin-top: 4vw;
+        }
+    }
+
+    @media screen and (min-width: $viewport-medium) {
+        .story-title {
+            font-size: 5vw;
+        }
+        .story-desc {
+            font-size: 2.7vw;
+        }
+        .story-date {
+            font-size: 1.8vw;
+        }
     }
 }
 
