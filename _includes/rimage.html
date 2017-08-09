@@ -1,0 +1,26 @@
+<div class="photo-container">
+{% assign story_path = page.imgdir | prepend: "img/stories/" | prepend: site.asset_path | append: "/" %}
+{% assign image_list = include.images | split: ', ' %}
+{% for image in image_list %}
+	{% assign props = image | split: ' ' %}
+	{% assign image_path = props[0] | prepend: story_path %}
+	{% assign pos = props[1] %}
+	{% case pos %}
+		{% when 'full' %}
+			{% assign sizes = '100vw' %}
+		{% when 'one' %}
+			{% assign sizes = '100%' %}
+		{% else %}
+			{% assign sizes = '(min-width: 48em) 49.5%, 100%' %}
+	{% endcase %}
+	<img srcset="{{ image_path | append: '_2880.jpg' }}	2880w,
+				 {{ image_path | append: '_1920.jpg' }}	1920w,
+				 {{ image_path | append: '.jpg' }} 		1700w,
+				 {{ image_path | append: '_1366.jpg' }}	1366w,
+				 {{ image_path | append: '_850.jpg' }}	850w,
+				 {{ image_path | append: '_420.jpg' }}	420w"
+		 sizes="{{ sizes }}"
+		 src="{{ image_name | prepend: story_path | append: '.jpg' }}"
+		 class="img-{{ pos }}" />
+{% endfor %}
+</div>
