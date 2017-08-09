@@ -7,6 +7,16 @@ set -e
 
 echo "Started deploying"
 
+echo "Optimizing images"
+
+grunt images
+
+echo "Pushing images to server"
+
+rsync images/generated/* tycho:~/www/assets/img/ -vPr
+
+echo "Building site and pushing to Github"
+
 # Current branch
 currentBranch=`git rev-parse --abbrev-ref HEAD`
 
