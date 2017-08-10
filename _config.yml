@@ -12,7 +12,7 @@ footer_text: >
 url:  # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: # leave blank if you don't want to display last updated
-asset_path: http://web.gps.caltech.edu/~syee/assets/
+asset_path: https://res.cloudinary.com/samuelyeewl/image/upload/
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -85,7 +85,7 @@ highlighter: pygments
 include: ['_pages']
 
 # Excludes
-exclude: ['Gruntfile', 'package.json', 'images', 'node_modules', '_draft*']
+exclude: ['Gruntfile', 'package.json', 'images', 'node_modules', '_draft*', '.secrets']
 
 # Plugins
 plugins:

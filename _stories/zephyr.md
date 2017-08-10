@@ -58,5 +58,5 @@ After hours of trundling through the vast, uninhabited landscapes, stopping inte
 
 Stepping off the train at the platform of Chicago’s Union Station, I was convinced that there is no better way to travel than this. The sights and people of the _Zephyr_ provide an experience more than worth the time spent on the train. And after all, isn’t it better to have travelled well than to have arrived?
 
-{% include rimage.html images="DSCF2334 one" %}
+{% include rimage.html images="DSCF2334 full" %}
 

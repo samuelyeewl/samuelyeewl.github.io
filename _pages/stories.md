@@ -8,10 +8,10 @@ description: photo essays
 {% assign stories = site.stories | sort:"date" | reverse %}
 
 {% for story in stories %}
-{% assign story_path = story.imgdir | prepend: "/img/stories/" | prepend: site.asset_path | append: "/" %}
+{% assign story_path = story.imgdir | prepend: "stories/" | append: "/" %}
 <div class="story-link">
     <a href="{{ story.url | prepend: site.baseurl | prepend: site.url }}">
-    <img src="{{ story.cover | prepend: story_path | append: '_850.jpg' }}" />
+    <img src="{{ story.cover | prepend: story_path | prepend: 'w_850,c_limit/' | prepend: site.asset_path | append: '.jpg' }}" />
     <div class="overlay">
     <div class="story-info">
         <h1 class="story-title">{{ story.title }}</h1>

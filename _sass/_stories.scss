@@ -229,7 +229,7 @@
 
 .photo-container {
     width: 100%;
-    overflow: auto;
+    overflow: visible;
     margin: 6rem 0;
 }
 
@@ -241,7 +241,6 @@
         right: 50%;
         margin: 6rem -50vw 6rem -50vw;
         padding: 0 15vw 0 15vw;
-        overflow: auto;
     }
 }
 

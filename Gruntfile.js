@@ -3,6 +3,16 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
+		cloudinary: {
+			upload: {
+				files: [{
+						expand: true,
+						cwd: "images/",
+						src: "**/*.jpg",
+				}]
+			}
+		},
+
 		image_resize: {
 			// Gallery
 			gallery_thumbs: {
@@ -122,5 +132,29 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-newer');
 	grunt.loadNpmTasks('grunt-image-resize');
 
+	grunt.registerMultiTask('cloudinary', function() {
+		var done = this.async();
+		var cloudinary = require('cloudinary');
+		var options = this.options({
+	      account: grunt.file.readJSON('images/cloudinary-account.json')
+	    });
+
+	    cloudinary.config({
+	      cloud_name: options.account.cloudName,
+	      api_key: options.account.apiKey,
+	      api_secret: options.account.apiSecret
+	    });
+
+	    this.files.forEach(function(list) {
+	    	list.src.forEach(function(f) {
+	    		var id = f.substr(0, f.lastIndexOf('.')).substr(f.indexOf('/')+1);
+	    		cloudinary.v2.uploader.upload(f, {public_id: id,
+	    										  transformation: {width: 2880, crop: 'limit', quality: 90}},
+	    			function(error, result) {grunt.log.ok("Uploaded " + result['public_id'])});
+	    	});
+	    });
+	});
+
 	grunt.registerTask('images', ['newer:image_resize']);
+	grunt.registerTask('upload', ['newer:cloudinary']);
 };

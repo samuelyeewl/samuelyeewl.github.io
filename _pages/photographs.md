@@ -11,7 +11,9 @@ description: photos i've taken
 <div class="album-link">
     <a href="{{ album.url | prepend: site.baseurl | prepend: site.url }}">
     {% if album.cover %}
-    <img src="{{ album.cover | prepend: album_path }}"/>
+    {% assign album_path = album.title | prepend: "albums/" | append: "/" %}
+    {% assign image_path = album.cover | prepend: album_path | append: ".jpg" %}
+    <img src="{{ image_path | prepend: site.asset_path }}"/>
     {% else %}
     <div class="thumbnail blankbox"></div>
     {% endif %}    

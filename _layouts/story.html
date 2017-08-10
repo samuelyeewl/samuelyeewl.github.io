@@ -1,18 +1,20 @@
 ---
 layout: default
 ---
-{% assign story_path = page.imgdir | prepend: "/img/stories/" | prepend: site.asset_path | append: "/" %}
+{% assign story_path = page.imgdir | prepend: "stories/" |  append: "/" %}
+{% assign cover_path = page.cover | prepend: story_path | append: '.jpg' %}
 
 <div class="post">
 
   <header class="story-header img-full">
-      <img srcset = "{{ page.cover | prepend: story_path | append: '_2880.jpg' }}  2880w,
-                     {{ page.cover | prepend: story_path | append: '_1920.jpg' }}  1920w,
-                     {{ page.cover | prepend: story_path | append: '_1366.jpg' }}  1366w,
-                     {{ page.cover | prepend: story_path | append: '_850.jpg' }}   850w,
-                     {{ page.cover | prepend: story_path | append: '_420.jpg' }}   420w"
+
+      <img srcset = "{{ cover_path | prepend: 'w_2880,c_limit/' | prepend: site.asset_path }}  2880w,
+                     {{ cover_path | prepend: 'w_1920,c_limit/' | prepend: site.asset_path }}  1920w,
+                     {{ cover_path | prepend: 'w_1366,c_limit/' | prepend: site.asset_path }}  1366w,
+                     {{ cover_path | prepend: 'w_850,c_limit/' | prepend: site.asset_path }}   850w,
+                     {{ cover_path | prepend: 'w_420,c_limit/' | prepend: site.asset_path }}   420w"
            sizes = "100vw"
-           src = "{{ page.cover | prepend: story_path | append: '_1920.jpg' }}"
+           src = "{{ cover_path | prepend: 'w_1920,c_limit/' | prepend: site.asset_path }}"
       />
       <div class="overlay">
         <div class="story-info">

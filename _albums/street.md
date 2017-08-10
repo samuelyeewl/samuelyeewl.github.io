@@ -1,10 +1,10 @@
 ---
 layout: album
 title: street
-cover: DSCF1322.jpg
+cover: DSCF1322
 
 images:
-- image_path: DSCF1018
+- image_path: DSCF1017
 - image_path: DSCF1322
 - image_path: DSCF1324
 - image_path: DSCF1616
