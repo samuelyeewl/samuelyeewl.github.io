@@ -499,13 +499,15 @@ footer a:hover { color: #0076df; }
   .story-header .story-desc { font-size: 2.7vw; }
   .story-header .story-date { font-size: 1.8vw; } }
 
-.story-content p { letter-spacing: 0.01rem; font-size: 1rem; line-height: 2rem; margin-top: 6rem; }
+.story-content p { letter-spacing: 0.01rem; font-size: 1rem; line-height: 2rem; margin-top: 6rem; padding: 0 25px; }
 .story-content blockquote p { margin-top: 0; font-size: 2rem; line-height: 3rem; letter-spacing: 0.03rem; }
 .story-content blockquote { margin: 6rem 0; }
 .story-content img { margin-top: 0.5%; margin-bottom: 0.5%; }
-.story-content .img-one, .story-content .img-left, .story-content .img-right { width: 100%; float: left; }
-@media screen and (min-width: 48em) { .story-content .img-left { width: 49.5%; float: left; }
-  .story-content .img-right { width: 49.5%; float: right; } }
+.story-content .img-one, .story-content .img-left, .story-content .img-right { width: 100%; }
+@media screen and (min-width: 48em) { .story-content .img-left { width: 49.5%; }
+  .story-content .img-right { width: 49.5%; float: right; }
+  .story-content p { padding: 0 75px; } }
+@media screen and (min-width: 32em) { .story-content p { padding: 0 50px; } }
 
 .img-full { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; }
 
