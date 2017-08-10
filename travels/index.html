@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Samuel Yee</title>
+  <title>Samuel Yee | travels</title>
   <meta name="description" content="Samuel Yee's webpage.
 ">
 
   <!-- <link rel="shortcut icon" href="/assets/img/favicon.ico"> -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/404.html">
+  <link rel="canonical" href="/travels/">
 </head>
 
 
@@ -65,25 +65,17 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+        <div class="post">
 
-<div class="container">
-  <h1>404</h1>
+  <header class="post-header">
+    <h1 class="post-title">travels</h1>
+    <h5 class="post-description">the places i've visited</h5>
+  </header>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <article class="post-content travels clearfix">
+    <svg id="travelmap">
+	</svg>
+  </article>
 </div>
 
       </div>
@@ -125,6 +117,20 @@
 
 <!-- Include page-specific javascript -->
 
+	
+	<script src="https://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+	
+	<script src="https://d3js.org/topojson.v1.min.js" type="text/javascript"></script>
+	
+	<script src="https://d3js.org/d3.geo.projection.v0.min.js" type="text/javascript"></script>
+	
+
+
+	
+	<script src="/assets/js/locations.json" type="text/javascript"></script>
+	
+	<script src="/assets/js/travel_map.js" type="text/javascript"></script>
+	
 
 
 <!-- Google Analytics -->
