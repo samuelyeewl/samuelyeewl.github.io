@@ -15,6 +15,9 @@
   },
   "dependencies": {
     "cloudinary": "^1.13.2",
+    "grunt-cloudinary": "^0.3.2",
+    "grunt-cloudinary-upload": "^0.4.5",
+    "lightslider": "^1.1.6",
     "lodash": "^4.17.11"
   }
 }

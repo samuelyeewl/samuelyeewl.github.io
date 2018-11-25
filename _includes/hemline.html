@@ -38,6 +38,14 @@
 	<script src="{{ js_file }}" type="text/javascript"></script>
 	{% endfor %}
 {% endif %}
+{% if layout.custom_js %}
+	{% for js_file in layout.custom_js %}
+	<script src="{{ js_file | prepend: '/assets/js/' | prepend: site.baseurl | prepend: site.url }}" type="text/javascript"></script>
+	{% endfor %}
+{% endif %}
+{% if layout.custom_footer %}
+	{% include {{ layout.custom_footer }} %}
+{% endif %}
 
 
 <!-- Include page-specific javascript -->
