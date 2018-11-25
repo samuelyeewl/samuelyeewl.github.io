@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Samuel Yee | research</title>
+  <title>Samuel Yee | Planetary Obliquities</title>
   <meta name="description" content="Samuel Yee's webpage.
 ">
 
   <!-- <link rel="shortcut icon" href="/assets/img/favicon.ico"> -->
 
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/research/">
+  <link rel="canonical" href="/research/planetary_obliquities/">
 </head>
 
 
@@ -68,16 +68,12 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">research</h1>
-    <h5 class="post-description">some of my research interests</h5>
+    <h1 class="post-title">Planetary Obliquities</h1>
+    <h5 class="post-description"></h5>
   </header>
 
-  <article class="post-content research clearfix">
-    
-<div class="section">
-	<h3>Planetary Obliquities</h3>
-	
-	<figure class="one right">
+  <article class="post-content Planetary Obliquities clearfix">
+    <figure class="one right">
 	<img src="/assets/img/orbital_precession.png" />
 	
 		<figcaption>The presence of an inclined long-period outer planet can lead to secular precession of the inner planet's orbit, putting the short-period planet on a polar orbit.</figcaption>
@@ -96,34 +92,6 @@
 		<figcaption>HAT-P-11 is one of the coolest stars known to host a close-in planet on a misaligned orbit. The left plot shows the reduction in misaligned planets for cooler host stars, while the right depicts the spin-orbit misalignment of planets around stars below the Kraft break (~ 6000 K) as a function of semimajor axis.</figcaption>
 	
 </figure>
-
-</div>
-
-<div class="section">
-	<h3>Stellar Characterization</h3>
-	
-		<figure class="half right">
-	<img src="/assets/img/specmatch-emp.png" />
-	
-		<figcaption>Performance of <i>SpecMatch-Emp</i> in an internal cross-validation test. Black points denote the library properties of a given star, red lines point to the derived properties. Especially along the main sequence, <i>SpecMatch-Emp</i> performs extremely well.</figcaption>
-	
-</figure>
-	
-	<p>Our methods for detecting and characterizing exoplanets depend heavily on a detailed understanding of their host stars. For instance, the transit detection method measures the tiny dip in a star’s brightness as a planet passes in front of it, with the size of this dip depending on the ratio of the planet’s to star’s radius.</p>
-
-<p>Working with <a href="https://www.erikpetigura.com/">Erik Petigura</a>, I developed <a href="https://github.com/samuelyeewl/specmatch-emp">SpecMatch-Empirical</a>, a new tool for characterizing the effective temperature, radius, and metallicity of a star from its spectrum. <em>SpecMatch-Emp</em> compares a target spectrum with a library of high resolution, high signal-to-noise observed spectra from stars with empirically-determined properties. Using empirical instead of synthetic spectra allows us to avoid model-dependent uncertainties particularly for late-type stars, and we achieve a precision of ~70 K in effective temperature and &lt;10% in stellar radius.</p>
-
-<p><em>SpecMatch-Emp</em> has been applied to spectra from many spectrographs including Keck/HIRES, HARPS, and <em>Coralie</em>. More information can be found in <a href="https://arxiv.org/abs/1701.00922">Yee, Petigura and Von Braun (2017)</a>, as well as at the <a href="https://specmatch-emp.readthedocs.io">documentation page</a>.</p>
-
-<figure class="full ">
-	<img src="/assets/img/specmatch-spectra.png" />
-	
-		<figcaption><i>SpecMatch-Emp</i> identifies the five best-matching library spectra to the target, in this case the G-type star HD 190406, and synthesizes a linear combination to create an even better match to the target spectrum. The weights of the linear combination are used to derive a set of stellar parameters for the target.</figcaption>
-	
-</figure>
-
-</div>
-
 
   </article>
 

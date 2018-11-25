@@ -69,7 +69,61 @@
 	<header class="post-header">
     	<h1 class="post-title">street</h1>
   	</header>
-	<div class="post-content fotorama clearfix" data-nav="thumbs" data-thumbheight="64" data-thumbwidth="96"
+  	<ul id="light-slider">
+  		
+		
+		
+		<li data-thumb="https://res.cloudinary.com/samuelyeewl/image/upload/w_96,c_limit/albums/street/DSCF1017.jpg">
+			<img src="https://res.cloudinary.com/samuelyeewl/image/upload/albums/street/DSCF1017.jpg">
+		</li>
+		
+		
+		<li data-thumb="https://res.cloudinary.com/samuelyeewl/image/upload/w_96,c_limit/albums/street/DSCF1322.jpg">
+			<img src="https://res.cloudinary.com/samuelyeewl/image/upload/albums/street/DSCF1322.jpg">
+		</li>
+		
+		
+		<li data-thumb="https://res.cloudinary.com/samuelyeewl/image/upload/w_96,c_limit/albums/street/DSCF1324.jpg">
+			<img src="https://res.cloudinary.com/samuelyeewl/image/upload/albums/street/DSCF1324.jpg">
+		</li>
+		
+		
+		<li data-thumb="https://res.cloudinary.com/samuelyeewl/image/upload/w_96,c_limit/albums/street/DSCF1616.jpg">
+			<img src="https://res.cloudinary.com/samuelyeewl/image/upload/albums/street/DSCF1616.jpg">
+		</li>
+		
+		
+		<li data-thumb="https://res.cloudinary.com/samuelyeewl/image/upload/w_96,c_limit/albums/street/DSCF1620.jpg">
+			<img src="https://res.cloudinary.com/samuelyeewl/image/upload/albums/street/DSCF1620.jpg">
+		</li>
+		
+		
+		<li data-thumb="https://res.cloudinary.com/samuelyeewl/image/upload/w_96,c_limit/albums/street/DSCF2081.jpg">
+			<img src="https://res.cloudinary.com/samuelyeewl/image/upload/albums/street/DSCF2081.jpg">
+		</li>
+		
+		
+		<li data-thumb="https://res.cloudinary.com/samuelyeewl/image/upload/w_96,c_limit/albums/street/DSCF3340.jpg">
+			<img src="https://res.cloudinary.com/samuelyeewl/image/upload/albums/street/DSCF3340.jpg">
+		</li>
+		
+		
+		<li data-thumb="https://res.cloudinary.com/samuelyeewl/image/upload/w_96,c_limit/albums/street/DSCF3897.jpg">
+			<img src="https://res.cloudinary.com/samuelyeewl/image/upload/albums/street/DSCF3897.jpg">
+		</li>
+		
+		
+		<li data-thumb="https://res.cloudinary.com/samuelyeewl/image/upload/w_96,c_limit/albums/street/DSCF6011.jpg">
+			<img src="https://res.cloudinary.com/samuelyeewl/image/upload/albums/street/DSCF6011.jpg">
+		</li>
+		
+		
+		<li data-thumb="https://res.cloudinary.com/samuelyeewl/image/upload/w_96,c_limit/albums/street/DSCF6099.jpg">
+			<img src="https://res.cloudinary.com/samuelyeewl/image/upload/albums/street/DSCF6099.jpg">
+		</li>
+		
+  	</ul>
+	<!-- <div class="post-content fotorama clearfix" data-nav="thumbs" data-thumbheight="64" data-thumbwidth="96"
 		data-keyboard="true" data-autoplay="8000">
 	
 	
@@ -86,6 +140,9 @@
 		<a href="https://res.cloudinary.com/samuelyeewl/image/upload/albums/street/DSCF1616.jpg"><img src="https://res.cloudinary.com/samuelyeewl/image/upload/w_96,c_limit/albums/street/DSCF1616.jpg"></a>
 	
 		
+		<a href="https://res.cloudinary.com/samuelyeewl/image/upload/albums/street/DSCF1620.jpg"><img src="https://res.cloudinary.com/samuelyeewl/image/upload/w_96,c_limit/albums/street/DSCF1620.jpg"></a>
+	
+		
 		<a href="https://res.cloudinary.com/samuelyeewl/image/upload/albums/street/DSCF2081.jpg"><img src="https://res.cloudinary.com/samuelyeewl/image/upload/w_96,c_limit/albums/street/DSCF2081.jpg"></a>
 	
 		
@@ -99,7 +156,7 @@
 	
 		
 		<a href="https://res.cloudinary.com/samuelyeewl/image/upload/albums/street/DSCF6099.jpg"><img src="https://res.cloudinary.com/samuelyeewl/image/upload/w_96,c_limit/albums/street/DSCF6099.jpg"></a>
-	
+	 -->
 	</div>
 </div>
       </div>
@@ -137,13 +194,28 @@
 <!-- Include layout-specific links -->
 
 	
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel= "stylesheet">
+	<link href="../../assets/css/lightslider.css" rel= "stylesheet">
 	
 
 
 	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js" type="text/javascript"></script>
+	<script src="../../assets/js/lightslider.js" type="text/javascript"></script>
 	
+
+
+
+	<script type="text/javascript">
+$(document).ready(function() {
+    $("#light-slider").lightSlider({
+    	gallery: true,
+    	item: 1,
+    	loop: true,
+    	galleryMargin: 3,
+    	slideMargin: 0,
+    	thumbItem: 9,
+    });
+});
+</script>
 
 
 
