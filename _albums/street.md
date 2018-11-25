@@ -8,6 +8,7 @@ images:
 - image_path: DSCF1322
 - image_path: DSCF1324
 - image_path: DSCF1616
+- image_path: DSCF1620
 - image_path: DSCF2081
 - image_path: DSCF3340
 - image_path: DSCF3897
