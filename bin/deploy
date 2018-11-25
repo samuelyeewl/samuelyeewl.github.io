@@ -31,7 +31,7 @@ git checkout -b gh-pages
 bundle exec jekyll build
 
 # Delete and move files.
-find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' ! -name 'images' ! -name 'node_modules' -exec rm -rf {} \;
+find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' ! -name 'images' ! -name 'node_modules' ! -name 'Gemfile' ! -name 'Gemfile.lock' ! -exec rm -rf {} \;
 mv _site/* .
 rm -R _site/
 
