@@ -10,7 +10,7 @@ description: some of my research interests
 <div class="section">
 	<h3>{{ project.title }}</h3>
 	{% if project.img %}
-		<img class="half {{ project.imgalign }}" src="{{ project.img | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
+		{% include figure.html image=project.img  width="half" align=project.imgalign caption=project.imgcaption  %}
 	{% endif %}
 	{{ project.content }}
 </div>

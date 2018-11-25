@@ -2,8 +2,8 @@
 # Site settings
 # -----------------------------------------------------------------------------
 name: Samuel Yee
-email: syee@caltech.edu
-description: > # this means to ignore newlines until "url:"
+email: swyee@princeton.edu
+description: > 
   Samuel Yee's webpage.
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>.
