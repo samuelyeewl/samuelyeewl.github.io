@@ -11,7 +11,8 @@ echo "Started deploying"
 
 # grunt images
 
-# echo "Pushing images to server"
+echo "Pushing images to server"
+grunt upload
 
 # rsync images/_generated/* tycho:~/www/assets/img/ -vPr
 
