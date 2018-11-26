@@ -8,13 +8,13 @@ layout: default
 
   <header class="story-header img-full">
 
-      <img srcset = "{{ cover_path | prepend: 'w_2880,c_limit/' | prepend: site.asset_path }}  2880w,
-                     {{ cover_path | prepend: 'w_1920,c_limit/' | prepend: site.asset_path }}  1920w,
-                     {{ cover_path | prepend: 'w_1366,c_limit/' | prepend: site.asset_path }}  1366w,
-                     {{ cover_path | prepend: 'w_850,c_limit/' | prepend: site.asset_path }}   850w,
-                     {{ cover_path | prepend: 'w_420,c_limit/' | prepend: site.asset_path }}   420w"
+      <img srcset = "{{ cover_path | prepend: 'v1/' | prepend: 'w_2880,c_limit/' | prepend: site.asset_path }}  2880w,
+                     {{ cover_path | prepend: 'v1/' | prepend: 'w_1920,c_limit/' | prepend: site.asset_path }}  1920w,
+                     {{ cover_path | prepend: 'v1/' | prepend: 'w_1366,c_limit/' | prepend: site.asset_path }}  1366w,
+                     {{ cover_path | prepend: 'v1/' | prepend: 'w_850,c_limit/' | prepend: site.asset_path }}   850w,
+                     {{ cover_path | prepend: 'v1/' | prepend: 'w_420,c_limit/' | prepend: site.asset_path }}   420w"
            sizes = "100vw"
-           src = "{{ cover_path | prepend: 'w_1920,c_limit/' | prepend: site.asset_path }}"
+           src = "{{ cover_path | prepend: 'v1/' | prepend: 'w_1920,c_limit/' | prepend: site.asset_path }}"
       />
       <div class="overlay">
         <div class="story-info">

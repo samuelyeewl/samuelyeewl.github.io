@@ -19,17 +19,10 @@ custom_footer:
   		{% assign album_path = page.title | prepend: "albums/" | append: "/" %}
 		{% for image in page.images %}
 		{% assign image_path = image.image_path | prepend: album_path | append: ".jpg" %}
-		<li data-thumb="{{ image_path | prepend: 'w_96,c_limit/' | prepend: site.asset_path }}">
-			<img src="{{ image_path | prepend: site.asset_path }}">
+		<li data-thumb="{{ image_path | prepend: 'v1/' | prepend: 'w_96,c_limit/' | prepend: site.asset_path }}">
+			<img src="{{ image_path | prepend: 'v1/' | prepend: site.asset_path }}">
 		</li>
 		{% endfor %}
   	</ul>
-	<!-- <div class="post-content fotorama clearfix" data-nav="thumbs" data-thumbheight="64" data-thumbwidth="96"
-		data-keyboard="true" data-autoplay="8000">
-	{% assign album_path = page.title | prepend: "albums/" | append: "/" %}
-	{% for image in page.images %}
-		{% assign image_path = image.image_path | prepend: album_path | append: ".jpg" %}
-		<a href="{{ image_path | prepend: site.asset_path }}"><img src="{{ image_path | prepend: 'w_96,c_limit/' | prepend: site.asset_path }}"></a>
-	{% endfor %} -->
 	</div>
 </div>

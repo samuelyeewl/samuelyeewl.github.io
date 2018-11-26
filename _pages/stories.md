@@ -11,7 +11,7 @@ description: photo essays
 {% assign story_path = story.imgdir | prepend: "stories/" | append: "/" %}
 <div class="story-link">
     <a href="{{ story.url | prepend: site.baseurl | prepend: site.url }}">
-    <img src="{{ story.cover | prepend: story_path | prepend: 'w_850,c_limit/' | prepend: site.asset_path | append: '.jpg' }}" />
+    <img src="{{ story.cover | prepend: story_path | prepend: 'v1/' | prepend: 'w_850,c_limit/' | prepend: site.asset_path | append: '.jpg' }}" />
     <div class="overlay">
     <div class="story-info">
         <h1 class="story-title">{{ story.title }}</h1>
