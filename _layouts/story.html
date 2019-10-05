@@ -2,12 +2,18 @@
 layout: default
 ---
 {% assign story_path = page.imgdir | prepend: "stories/" |  append: "/" %}
-{% assign cover_path = page.cover | prepend: story_path | append: '.jpg' %}
+{% assign dev_path = page.imgdir | prepend: site.dev_asset_path | append: "/" %}
+{% capture dev_path_exists %}{% file_exists {{ page.cover | prepend: dev_path | prepend: "/" | append: '.jpg' }} %}{% endcapture %}
 
 <div class="post">
 
   <header class="story-header img-full">
-
+    {% if dev_path_exists == "true" and jekyll.environment == "development" %}
+      {% assign cover_path = page.cover | prepend: dev_path | prepend: "/" | append: '.jpg' %}
+      <img src = "{{ cover_path }}"
+           width = "100vw" />
+    {% else %}
+      {% assign cover_path = page.cover | prepend: story_path | append: '.jpg' %}
       <img srcset = "{{ cover_path | prepend: 'w_2880,c_limit/' | prepend: site.asset_path }}  2880w,
                      {{ cover_path | prepend: 'w_1920,c_limit/' | prepend: site.asset_path }}  1920w,
                      {{ cover_path | prepend: 'w_1366,c_limit/' | prepend: site.asset_path }}  1366w,
@@ -16,6 +22,7 @@ layout: default
            sizes = "100vw"
            src = "{{ cover_path | prepend: 'w_1920,c_limit/' | prepend: site.asset_path }}"
       />
+    {% endif %}
       <div class="overlay">
         <div class="story-info">
         <h1 class="story-title">{{ page.title }}</h1>
@@ -23,15 +30,66 @@ layout: default
         <p class="story-desc">{{ page.description }}</p>
         {% endif %}
         <p class="story-date">
-          {{ page.date | date: "%B" }}
-          {% assign day = page.date | date: "%-d"  %}
-          {% case day %}
-            {% when '1' or '21' or '31' %}{{ day }}st,
-            {% when '2' or '22' %}{{ day }}nd,
-            {% when '3' or '23' %}{{ day }}rd,
-            {% else %}{{ day }}th,
-          {% endcase %}
-          {{ page.date | date: "%Y" }}
+          {% if page.startdate and page.enddate %}
+              {% assign startyear = page.startdate | date: "%Y" %}
+              {% assign endyear = page.enddate | date: "%Y" %}
+              {% assign startmonth = page.startdate | date: "%B" %}
+              {% assign endmonth = page.enddate | date: "%B" %}
+              {% assign startday = page.startdate | date: "%-d" %}
+              {% case startday %}
+                  {% when '1' or '21' or '31' %}{% assign startday = startday | append: 'st' %}
+                  {% when '2' or '22' %}{% assign startday = startday | append: 'nd' %}
+                  {% when '3' or '23' %}{% assign startday = startday | append: 'rd' %}
+                  {% else %}{% assign startday = startday | append: 'th' %}
+              {% endcase %}
+              {% assign endday = page.enddate | date: "%-d" %}
+              {% case endday %}
+                  {% when '1' or '21' or '31' %}{% assign endday = endday | append: 'st' %}
+                  {% when '2' or '22' %}{% assign endday = endday | append: 'nd' %}
+                  {% when '3' or '23' %}{% assign endday = endday | append: 'rd' %}
+                  {% else %}{% assign endday = endday | append: 'th' %}
+              {% endcase %}
+              {% if startyear == endyear %}
+                  {% if startmonth == endmonth %}
+                      {% if startday == endday %}
+                          {{ startmonth }}
+                          {{ startday }},
+                          {{ startyear }}
+                      {% else %}
+                          {{ startmonth }}
+                          {{ startday }} - {{ endday }},
+                          {{ startyear }}
+                      {% endif %}
+                  {% else %}
+                      {{ startmonth }} {{ startday }} - {{ endmonth }} {{ endday }},
+                      {{ startyear }}
+                  {% endif %}
+              {% else %}
+                  {{ startmonth }} {{ startday }}, {{ startyear }} - {{ endmonth }} {{ endday }}, {{ endyear }}
+              {% endif %}
+          {% elsif page.date %}
+              {{ page.date | date: "%B" }}
+              {% assign day = page.date | date: "%-d"  %}
+              {% case day %}
+                {% when '1' or '21' or '31' %}{{ day }}st,
+                {% when '2' or '22' %}{{ day }}nd,
+                {% when '3' or '23' %}{{ day }}rd,
+                {% else %}{{ day }}th,
+              {% endcase %}
+              {{ page.date | date: "%Y" }}
+          {% endif %}
+          <br>
+            Published 
+            {{ page.pubdate | date: "%B" }}
+            {% assign day = page.pubdate | date: "%-d"  %}
+            {% case day %}
+              {% when '1' or '21' or '31' %}{{ day }}st,
+              {% when '2' or '22' %}{{ day }}nd,
+              {% when '3' or '23' %}{{ day }}rd,
+              {% else %}{{ day }}th,
+            {% endcase %}
+            {{ page.pubdate | date: "%Y" }}
+
         </p>
         </div>
       </div>

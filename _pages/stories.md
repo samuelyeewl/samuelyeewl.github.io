@@ -9,9 +9,15 @@ description: photo essays
 
 {% for story in stories %}
 {% assign story_path = story.imgdir | prepend: "stories/" | append: "/" %}
+{% assign dev_path = story.imgdir | prepend: site.dev_asset_path | append: "/" %}
+{% capture dev_path_exists %}{% file_exists {{ story.cover | prepend: dev_path | prepend: "/" | append: '.jpg' }} %}{% endcapture %}
 <div class="story-link">
     <a href="{{ story.url | prepend: site.baseurl | prepend: site.url }}">
+    {% if dev_path_exists == "true" and jekyll.environment == "development" %}
+    <img src="{{ story.cover | prepend: dev_path | prepend: "/" | append: '.jpg' }}" />
+    {% else %}
     <img src="{{ story.cover | prepend: story_path | prepend: 'w_850,c_limit/' | prepend: site.asset_path | append: '.jpg' }}" />
+    {% endif %}
     <div class="overlay">
     <div class="story-info">
         <h1 class="story-title">{{ story.title }}</h1>
