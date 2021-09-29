@@ -65,7 +65,7 @@
   {% endif %}
   {% if entry.arxiv %}
     [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
-  {% else if entry.url %}
+  {% if entry.url %}
     [<a href="{{ entry.url }}" target="_blank">URL</a>]
   {% else if entry.html %}
     [<a href="{{ entry.html }}" target="_blank">URL</a>]
