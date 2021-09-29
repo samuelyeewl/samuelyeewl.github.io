@@ -35,14 +35,14 @@ description: photo essays
                     {% when '1' or '21' or '31' %}{% assign startday = startday | append: 'st' %}
                     {% when '2' or '22' %}{% assign startday = startday | append: 'nd' %}
                     {% when '3' or '23' %}{% assign startday = startday | append: 'rd' %}
-                    {% else %}{{ day }}{% assign startday = startday | append: 'th' %}
+                    {% else %}{% assign startday = startday | append: 'th' %}
                 {% endcase %}
                 {% assign endday = story.enddate | date: "%-d" %}
                 {% case endday %}
                     {% when '1' or '21' or '31' %}{% assign endday = endday | append: 'st' %}
                     {% when '2' or '22' %}{% assign endday = endday | append: 'nd' %}
                     {% when '3' or '23' %}{% assign endday = endday | append: 'rd' %}
-                    {% else %}{{ day }}{% assign endday = endday | append: 'th' %}
+                    {% else %}{% assign endday = endday | append: 'th' %}
                 {% endcase %}
                 {% if startyear == endyear %}
                     {% if startmonth == endmonth %}
@@ -84,9 +84,6 @@ description: photo essays
               {% else %}{{ day }}th,
             {% endcase %}
             {{ story.pubdate | date: "%Y" }}
-        </p>
-        <p class="story-date">
-            
         </p>
     </div>
     </div>
