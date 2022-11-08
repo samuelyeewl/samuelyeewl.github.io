@@ -5,9 +5,9 @@ permalink: /research/
 description: some of my research interests
 ---
 
-Under construction
+<!-- Under construction -->
 
-<!-- {% for project in site.research %}
+{% for project in site.research %}
 
 <div class="section">
 	<h3>{{ project.title }}</h3>
@@ -17,4 +17,4 @@ Under construction
 	{{ project.content }}
 </div>
 
-{% endfor %} -->
+{% endfor %}
