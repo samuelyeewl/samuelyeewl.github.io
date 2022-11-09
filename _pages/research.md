@@ -5,6 +5,8 @@ permalink: /research/
 description: some of my research interests
 ---
 
+<!-- Under construction -->
+
 {% for project in site.research %}
 
 <div class="section">

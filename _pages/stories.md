@@ -9,9 +9,15 @@ description: photo essays
 
 {% for story in stories %}
 {% assign story_path = story.imgdir | prepend: "stories/" | append: "/" %}
+{% assign dev_path = story.imgdir | prepend: site.dev_asset_path | append: "/" %}
+{% capture dev_path_exists %}{% file_exists {{ story.cover | prepend: dev_path | prepend: "/" | append: '.jpg' }} %}{% endcapture %}
 <div class="story-link">
     <a href="{{ story.url | prepend: site.baseurl | prepend: site.url }}">
-    <img src="{{ story.cover | prepend: story_path | prepend: 'v1/' | prepend: 'w_850,c_limit/' | prepend: site.asset_path | append: '.jpg' }}" />
+    {% if dev_path_exists == "true" and jekyll.environment == "development" %}
+    <img src="{{ story.cover | prepend: dev_path | prepend: "/" | append: '.jpg' }}" />
+    {% else %}
+    <img src="{{ story.cover | prepend: story_path | prepend: 'w_850,c_limit/' | prepend: site.asset_path | append: '.jpg' }}" />
+    {% endif %}
     <div class="overlay">
     <div class="story-info">
         <h1 class="story-title">{{ story.title }}</h1>
@@ -29,14 +35,14 @@ description: photo essays
                     {% when '1' or '21' or '31' %}{% assign startday = startday | append: 'st' %}
                     {% when '2' or '22' %}{% assign startday = startday | append: 'nd' %}
                     {% when '3' or '23' %}{% assign startday = startday | append: 'rd' %}
-                    {% else %}{{ day }}{% assign startday = startday | append: 'th' %}
+                    {% else %}{% assign startday = startday | append: 'th' %}
                 {% endcase %}
                 {% assign endday = story.enddate | date: "%-d" %}
                 {% case endday %}
                     {% when '1' or '21' or '31' %}{% assign endday = endday | append: 'st' %}
                     {% when '2' or '22' %}{% assign endday = endday | append: 'nd' %}
                     {% when '3' or '23' %}{% assign endday = endday | append: 'rd' %}
-                    {% else %}{{ day }}{% assign endday = endday | append: 'th' %}
+                    {% else %}{% assign endday = endday | append: 'th' %}
                 {% endcase %}
                 {% if startyear == endyear %}
                     {% if startmonth == endmonth %}
@@ -78,9 +84,6 @@ description: photo essays
               {% else %}{{ day }}th,
             {% endcase %}
             {{ story.pubdate | date: "%Y" }}
-        </p>
-        <p class="story-date">
-            
         </p>
     </div>
     </div>

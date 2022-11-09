@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 name: Samuel Yee
-email: swyee@astro.princeton.edu
+email: swyee@princeton.edu
 description: > 
   Samuel Yee's webpage.
 footer_text: >
@@ -13,7 +13,6 @@ url:  # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: # leave blank if you don't want to display last updated
 asset_path: https://res.cloudinary.com/samuelyeewl/image/upload/
-dev_asset_path: images/
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -83,10 +82,10 @@ markdown: kramdown
 highlighter: pygments
 
 # Includes
-include: ['_pages', 'images']
+include: ['_pages']
 
 # Excludes
-exclude: ['Gruntfile', 'package.json', 'node_modules', '_draft*', '.secrets']
+exclude: ['Gruntfile', 'package.json', 'images', 'node_modules', '_draft*', '.secrets']
 
 # Plugins
 plugins:

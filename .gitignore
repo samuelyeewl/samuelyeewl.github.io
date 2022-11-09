@@ -5,3 +5,7 @@ node_modules
 .sass-cache
 .jekyll-metadata
 .sublime-project
+*.swp
+
+.DS_Store
+.jekyll-cache
