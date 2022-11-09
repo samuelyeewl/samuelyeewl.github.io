@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Stellar Characterization
+order: 3
 img: specmatch-emp.png
 imgalign: right
 imgcaption: Performance of <i>SpecMatch-Emp</i> in an internal cross-validation test. Black points denote the library properties of a given star, red lines point to the derived properties. Especially along the main sequence, <i>SpecMatch-Emp</i> performs extremely well.

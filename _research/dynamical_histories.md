@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Dynamical Histories of Planetary Systems
+order: 2
 ---
 
 Early astronomers saw our solar system as a clockwork mechanism -- planets orbiting the sun, moons orbiting the planets, forever and unchanging. But we have since learned that things are more complicated than that. In our Solar System, the orbits of the planets are thought to have [migrated over long distances](https://en.wikipedia.org/wiki/Grand_tack_hypothesis), while our own moon is thought to have formed as a result of a [giant impact](https://en.wikipedia.org/wiki/Giant-impact_hypothesis) between a Mars-sized object and the Earth. And as the Sun ages and turns into a red giant, the inner planets (including possibly the Earth), will eventually be engulfed. Our Solar System is a dynamic and sometimes violent place. What can we learn about the history of other planetary systems?

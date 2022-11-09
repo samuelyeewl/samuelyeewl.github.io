@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Hot Jupiter Demographics
+order: 1
 img: hj_hist.png
 imgalign: right
 imgcaption: TESS presents an opportunity to assemble a complete, magnitude-limited sample of 400 hot Jupiters orbiting FGK stars brighter than G = 12.5 mag. Of these, 150 were previously known from ground-based surveys, while the remainder will be new detections from TESS. My survey has confirmed > 70 new hot Jupiters to build up this sample.

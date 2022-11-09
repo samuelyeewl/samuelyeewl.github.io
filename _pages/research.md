@@ -7,7 +7,9 @@ description: some of my research interests
 
 <!-- Under construction -->
 
-{% for project in site.research %}
+{% assign projects = site.research | sort:"order" %}
+
+{% for project in projects %}
 
 <div class="section">
 	<h3>{{ project.title }}</h3>

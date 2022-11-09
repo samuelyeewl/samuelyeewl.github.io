@@ -12,7 +12,7 @@ profile:
 social: true
 ---
 
-I'm currently a fourth-year graduate student in the [Department of Astrophysical Sciences](https://www.astro.princeton.edu) at Princeton University, working with [Josh Winn](https://web.astro.princeton.edu/people/joshua-winn).
+I'm currently a final year graduate student in the [Department of Astrophysical Sciences](https://www.astro.princeton.edu) at Princeton University, working with [Josh Winn](https://web.astro.princeton.edu/people/joshua-winn).
 
 My research interests are in understanding Hot Jupiters -- giant planets like Jupiter in our own solar system, but which orbit much closer to their stars, taking just a few days to make a complete orbit.
 In comparison, Mercury, the closest planet to the Sun in our solar system, takes 88 days to go around once.
