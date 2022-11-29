@@ -462,7 +462,7 @@ footer a:hover { color: #0076df; }
 
 .year { border-top: 1px solid #ccc; color: #ccc; margin: 0 0 -3.5ex 0; padding-top: 1ex; text-align: right; }
 
-.bibliography { margin-bottom: 50px; margin-top: 20px; padding-right: 5rem; list-style-type: circle; }
+.bibliography { margin-bottom: 30px; margin-top: 20px; padding-right: 5rem; list-style-type: circle; }
 
 .bibliography li { margin: 10px 0; position: relative; }
 
@@ -476,15 +476,21 @@ footer a:hover { color: #0076df; }
 
 .bibliography li .author > em { border-bottom: 1px solid; font-style: normal; }
 
+.bibliography li .author.hidden { font-size: 16px; }
+
+.bibliography li span.showauth.hidden { display: none; }
+
+.bibliography li span.showauth, .bibliography li span.hideauth, .bibliography li span.extraauth.open { display: inline; }
+
 .bibliography li a.abstract, .bibliography li a.bibtex { cursor: pointer; }
 
-.bibliography li .hidden { font-size: 0.875rem; max-height: 0px; overflow: hidden; text-align: justify; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
+.bibliography li .hidden.open { display: block; max-height: 100em; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
+
+.bibliography li .hidden { display: none; font-size: 0.875rem; max-height: 0px; overflow: hidden; text-align: justify; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
 
 .bibliography li .hidden p { line-height: 1.4em; margin: 10px; }
 
 .bibliography li .hidden pre { font-size: 1em; line-height: 1.4em; padding: 10px; }
-
-.bibliography li .hidden.open { max-height: 100em; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
 
 .bibliography li span.abstract.hidden { border: dashed 1px white; }
 
