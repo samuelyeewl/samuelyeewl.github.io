@@ -17,7 +17,7 @@
     text-align: right;
 }
 .bibliography {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-top: 20px;
     padding-right: 5rem;
     list-style-type: circle;
@@ -41,8 +41,23 @@
                 font-style: normal;
             }
         }
+        .author.hidden {
+            font-size: $base-font-size;
+        }
+        span.showauth.hidden { display: none; }
+        span.showauth, span.hideauth, span.extraauth.open { display: inline; }
         a.abstract, a.bibtex { cursor: pointer; }
+        .hidden.open {
+            display: block;
+            max-height: 100em;
+            -webkit-transition: 0.15s ease;
+            -moz-transition: 0.15s ease;
+            -ms-transition: 0.15s ease;
+            -o-transition: 0.15s ease;
+            transition: all 0.15s ease;
+        }        
         .hidden {
+            display: none;
             font-size: $small-font-size;
             max-height: 0px;
             overflow: hidden;
@@ -62,14 +77,6 @@
                 line-height: 1.4em;
                 padding: 10px;
             }
-        }
-        .hidden.open {
-            max-height: 100em;
-            -webkit-transition: 0.15s ease;
-            -moz-transition: 0.15s ease;
-            -ms-transition: 0.15s ease;
-            -o-transition: 0.15s ease;
-            transition: all 0.15s ease;
         }
         span.abstract.hidden {
             border: dashed 1px $background-color;

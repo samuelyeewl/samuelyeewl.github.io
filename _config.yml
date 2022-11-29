@@ -98,6 +98,8 @@ plugins:
 scholar:
 
   last_name: Yee
+  first_name: Samuel
+  first_initials: S. W.
 
   style: apa
   locale: en
