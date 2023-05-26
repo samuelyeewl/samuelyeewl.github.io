@@ -6,13 +6,13 @@ description: Astrophysics PhD Student at Princeton.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic_2.jpg
   address: >
 
 social: true
 ---
 
-I'm currently a final year graduate student in the [Department of Astrophysical Sciences](https://www.astro.princeton.edu) at Princeton University, working with [Josh Winn](https://web.astro.princeton.edu/people/joshua-winn).
+I'm currently a final year graduate student in the [Department of Astrophysical Sciences](https://www.astro.princeton.edu) at Princeton University, working with [Josh Winn](https://web.astro.princeton.edu/people/joshua-winn). I plan to defend my PhD in August 2023 and will begin as a [51 Pegasi b Fellow](https://hsfoundation.org/programs/science/51-pegasi-b-fellowship) at the [Harvard & Smithsonian Center for Astrophysics](https://cfa.harvard.edu) in September 2023.
 
 My research interests are in understanding Hot Jupiters -- giant planets like Jupiter in our own solar system, but which orbit much closer to their stars, taking just a few days to make a complete orbit.
 In comparison, Mercury, the closest planet to the Sun in our solar system, takes 88 days to go around once.
