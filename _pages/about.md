@@ -13,7 +13,7 @@ social: true
 ---
 
 I'm a [51 Pegasi b Fellow](https://hsfoundation.org/programs/science/51-pegasi-b-fellowship) studying exoplanets, primarily close-in giant planets.
-**I have recently moved to the [Division of Astronomy \& Astrophysics at the University of California, Los Angeles](https://www.astro.ucla.edu/)**,
+**I have recently moved to the [Division of Astronomy & Astrophysics at the University of California, Los Angeles](https://www.astro.ucla.edu/)**,
 after having spent the first two years of my postdoctoral fellowship at the [Harvard & Smithsonian Center for Astrophysics](https://cfa.harvard.edu).
 Previously, I did my PhD in the [Department of Astrophysical Sciences](https://www.astro.princeton.edu) at Princeton University, working with [Josh Winn](https://web.astro.princeton.edu/people/joshua-winn).
 
