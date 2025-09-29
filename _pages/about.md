@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: <strong>Samuel</strong> Yee
-description: 51 Pegasi b Postdoctoral Fellow at the Center for Astrophysics
+description: 51 Pegasi b Postdoctoral Fellow in the Division of Astronomy and Astrophysics at the University of California, Los Angeles
 
 profile:
   align: right
@@ -12,9 +12,10 @@ profile:
 social: true
 ---
 
-I'm a [51 Pegasi b Fellow](https://hsfoundation.org/programs/science/51-pegasi-b-fellowship) at the [Harvard & Smithsonian Center for Astrophysics](https://cfa.harvard.edu).
+I'm a [51 Pegasi b Fellow](https://hsfoundation.org/programs/science/51-pegasi-b-fellowship) studying exoplanets, primarily close-in giant planets.
+**I have recently moved to the [Division of Astronomy \& Astrophysics at the University of California, Los Angeles](https://www.astro.ucla.edu/)**,
+after having spent the first two years of my postdoctoral fellowship at the [Harvard & Smithsonian Center for Astrophysics](https://cfa.harvard.edu).
 Previously, I did my PhD in the [Department of Astrophysical Sciences](https://www.astro.princeton.edu) at Princeton University, working with [Josh Winn](https://web.astro.princeton.edu/people/joshua-winn).
-If you are a student interested in working with me, please reach out!
 
 My research interests are in understanding Hot Jupiters -- giant planets like Jupiter in our own solar system, but which orbit much closer to their stars, taking just a few days to make a complete orbit.
 In comparison, Mercury, the closest planet to the Sun in our solar system, takes 88 days to go around once.
