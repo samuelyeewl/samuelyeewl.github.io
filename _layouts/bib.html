@@ -87,7 +87,15 @@
 
     <span class="periodical">
     {%- if entry.type == "article" -%}
-      <em>{{- entry.journal -}}</em>
+      {% assign journal_name = entry.journal
+        | replace: '\mnras', 'Monthly Notices of the Royal Astronomical Society'
+        | replace: '\pasp', 'Publications of the Astronomical Society of the Pacific'
+        | replace: '\aap', 'Astronomy & Astrophysics'
+        | replace: '\apjs', 'The Astrophysical Journal Supplement Series'
+        | replace: '\apjl', 'The Astrophysical Journal Letters'
+        | replace: '\aj', 'The Astronomical Journal'
+        | replace: '\apj', 'The Astrophysical Journal' %}
+      <em>{{- journal_name -}}</em>
     {%- elsif entry.type == "inproceedings" -%}
       <em>In {{entry.booktitle}}</em>
     {%- endif -%}
@@ -107,8 +115,13 @@
   {% if entry.arxiv %}
     [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
   {% endif %}
-  {% if entry.url %}
-    [<a href="{{ entry.url }}" target="_blank">URL</a>]
+  {% if entry.eprint %}
+    [<a href="http://arxiv.org/abs/{{ entry.eprint }}" target="_blank">arXiv</a>]
+  {% endif %}
+  {% if entry.doi %}
+    [<a href="https://doi.org/{{ entry.doi }}" target="_blank">Paper</a>]
+  {% elsif entry.url %}
+    [<a href="{{ entry.url }}" target="_blank">Paper</a>]
   {% endif %}
   {% if entry.pdf %}
     [<a href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
@@ -130,7 +143,14 @@
   <!-- Hidden abstract block -->
   {% if entry.abstract %}
   <span class="abstract hidden">
+  {% assign raw_bibtex = entry.bibtex %}
+  {% assign abstract_start = raw_bibtex | split: 'abstract = {{' | last %}
+  {% if abstract_start != raw_bibtex %}
+    {% assign raw_abstract = abstract_start | split: '}},' | first %}
+    <p>{{ raw_abstract }}</p>
+  {% else %}
     <p>{{ entry.abstract }}</p>
+  {% endif %}
   </span>
   {% endif %}
 </div>

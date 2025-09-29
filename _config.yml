@@ -48,7 +48,7 @@ contact_note: >
 # # Optional features
 # show_social_icons:  false
 # enable_anchorjs:    false
-# enable_katex:       true
+enable_katex:       true
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -120,9 +120,11 @@ scholar:
 
   query: "@*"
 
+  bibtex_skip_fields: []
+
 # -----------------------------------------------------------------------------
 # Other settings
 # -----------------------------------------------------------------------------
 jquery_version: "1.12.4"
-katex_version: "0.7.1"
+katex_version: "0.16.22"
 anchorjs_version: "3.2.2"

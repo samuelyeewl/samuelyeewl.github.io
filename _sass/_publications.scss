@@ -26,7 +26,8 @@
         margin: 10px 0;
         position: relative;
 
-        span { display: block; }
+        div > span { display: block; }
+        
         .title { font-weight: bold; }
         .author {
             a {

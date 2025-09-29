@@ -15,6 +15,7 @@ social: true
 I'm a [51 Pegasi b Fellow](https://hsfoundation.org/programs/science/51-pegasi-b-fellowship) studying exoplanets, primarily close-in giant planets.
 **I have recently moved to the [Division of Astronomy & Astrophysics at the University of California, Los Angeles](https://www.astro.ucla.edu/)**,
 after having spent the first two years of my postdoctoral fellowship at the [Harvard & Smithsonian Center for Astrophysics](https://cfa.harvard.edu).
+**Please reach out to me at my new email address, which can be found in my CV, linked above.**
 Previously, I did my PhD in the [Department of Astrophysical Sciences](https://www.astro.princeton.edu) at Princeton University, working with [Josh Winn](https://web.astro.princeton.edu/people/joshua-winn).
 
 My research interests are in understanding Hot Jupiters -- giant planets like Jupiter in our own solar system, but which orbit much closer to their stars, taking just a few days to make a complete orbit.

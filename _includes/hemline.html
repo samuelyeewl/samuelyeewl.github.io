@@ -6,9 +6,29 @@
 
 {% if site.enable_katex %}
 <!-- Load KaTeX -->
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/{{ site.katex_version }}/katex.min.css">
-<script async src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/{{ site.katex_version }}/katex.min.js"></script>
-<script async src="{{ '/assets/js/katex.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@{{ site.katex_version }}/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@{{ site.katex_version }}/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@{{ site.katex_version }}/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+        // Delimiters for different math environments
+        delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+        ],
+        // Don't skip any tags - process everything
+        ignoredTags: ["script", "noscript", "style", "textarea", "pre"],
+        // Process content that might be added dynamically
+        throwOnError : false
+    });
+});
+</script>
+<!-- <script async src="{{ '/assets/js/katex.js' | prepend: site.baseurl | prepend: site.url }}"></script> -->
 {% endif %}
 
 {% if site.enable_anchorjs %}
