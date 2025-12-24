@@ -66,6 +66,11 @@ upload_image() {
         exit 1
     fi
 
+    if curl -s -f -u "$api_key:$api_secret" "https://api.cloudinary.com/v1_1/$cloud_name/resources/image/upload/$public_id" > /dev/null; then
+        echo "Skipping $public_id (already exists)"
+        return
+    fi
+
     timestamp=$(date +%s)
     
     # Signature generation:
