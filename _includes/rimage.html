@@ -12,6 +12,10 @@
 			{% assign sizes = '100vw' %}
 		{% when 'one' %}
 			{% assign sizes = '100%' %}
+		{% when 'two' %}
+			{% assign sizes = '(min-width: 48em) 49.5%, 100%' %}
+		{% when 'three' %}
+			{% assign sizes = '(min-width: 48em) 32.6%, 100%' %}
 		{% else %}
 			{% assign sizes = '(min-width: 48em) 49.5%, 100%' %}
 	{% endcase %}
