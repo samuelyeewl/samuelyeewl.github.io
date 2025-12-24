@@ -74,6 +74,28 @@ upload_image() {
         return
     fi
 
+    # Check file size (10MB limit)
+    filesize=$(stat -f%z "$file")
+    max_size=10485760
+    temp_file=""
+
+    if [[ "$filesize" -gt "$max_size" ]]; then
+        echo "File $file is too large ($((filesize / 1024 / 1024))MB). Resizing to width $width..."
+        temp_file="/tmp/$(basename "$file")"
+        
+        # Resize to target width first
+        sips --resampleWidth "$width" "$file" --out "$temp_file" > /dev/null
+        
+        # If still too large, reduce quality
+        new_size=$(stat -f%z "$temp_file")
+        if [[ "$new_size" -gt "$max_size" ]]; then
+             echo "Still too large ($((new_size / 1024 / 1024))MB). Reducing quality..."
+             sips -s format jpeg -s formatOptions 80 "$temp_file" > /dev/null
+        fi
+        
+        file="$temp_file"
+    fi
+
     timestamp=$(date +%s)
     
     # Signature generation:
@@ -97,7 +119,14 @@ upload_image() {
         -F "transformation=c_limit,q_90,w_$width" \
         -F "signature=$signature")
     
-    echo "Response: $response"
+    if echo "$response" | grep -q '"error"'; then
+        echo "Error uploading $public_id:"
+        echo "$response"
+    fi
+
+    if [[ -n "$temp_file" ]]; then
+        rm "$temp_file"
+    fi
 }
 
 # --- Main Commands ---
