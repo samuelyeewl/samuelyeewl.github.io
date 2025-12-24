@@ -9,7 +9,7 @@ description: photo essays
 
 {% for story in stories %}
 {% assign story_path = story.imgdir | prepend: "stories/" | append: "/" %}
-{% assign dev_path = story.imgdir | prepend: site.dev_asset_path | append: "/" %}
+{% assign dev_path = story.imgdir | prepend: "stories/" | prepend: site.dev_asset_path | append: "/" %}
 {% capture dev_path_exists %}{% file_exists {{ story.cover | prepend: dev_path | prepend: "/" | append: '.jpg' }} %}{% endcapture %}
 <div class="story-link">
     <a href="{{ story.url | prepend: site.baseurl | prepend: site.url }}">

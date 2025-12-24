@@ -1,6 +1,6 @@
 <div class="photo-container">
 {% assign story_path = page.imgdir | prepend: "stories/" |  append: "/" %}
-{% assign dev_path = page.imgdir | prepend: site.dev_asset_path | append: "/" %}
+{% assign dev_path = page.imgdir | prepend: "stories/" | prepend: site.dev_asset_path | append: "/" %}
 {% capture dev_path_exists %}{% file_exists {{ page.cover | prepend: dev_path | prepend: "/" | append: '.jpg' }} %}{% endcapture %}
 
 {% assign image_list = include.images | split: ', ' %}
