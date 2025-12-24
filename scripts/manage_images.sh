@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+# Enable case-insensitive globbing
+setopt nocaseglob
+
 # Configuration
 CLOUDINARY_CONFIG_FILE="images/cloudinary-account.json"
 
@@ -84,7 +87,7 @@ upload_image() {
     echo "Uploading $public_id..."
 
     # Upload
-    curl -s -X POST "https://api.cloudinary.com/v1_1/$cloud_name/image/upload" \
+    response=$(curl -s -X POST "https://api.cloudinary.com/v1_1/$cloud_name/image/upload" \
         -F "file=@$file" \
         -F "api_key=$api_key" \
         -F "timestamp=$timestamp" \
@@ -92,7 +95,9 @@ upload_image() {
         -F "invalidate=true" \
         -F "overwrite=false" \
         -F "transformation=c_limit,q_90,w_$width" \
-        -F "signature=$signature" > /dev/null
+        -F "signature=$signature")
+    
+    echo "Response: $response"
 }
 
 # --- Main Commands ---
