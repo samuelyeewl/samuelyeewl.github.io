@@ -23,7 +23,9 @@
 	{% assign image_path = props[0] | prepend: dev_path | prepend: '/' | append: '.jpg' %}
 	<img src="{{ image_path }}"
 	     sizes="{{ sizes }}"
-		 class="img-{{ pos }}"/>
+		 class="img-{{ pos }} enlargeable-image"
+         data-src="{{ image_path }}"
+         style="cursor: pointer;" />
 	{% else %}
 	{% assign image_path = props[0] | prepend: story_path | append: '.jpg' %}
 	<img srcset="{{ image_path | prepend: 'w_2880,c_limit/' | prepend: site.asset_path }}	2880w,
@@ -32,8 +34,10 @@
 				 {{ image_path | prepend: 'w_850,c_limit/' | prepend: site.asset_path }}	850w,
 				 {{ image_path | prepend: 'w_420,c_limit/' | prepend: site.asset_path }}	420w"
 		 sizes="{{ sizes }}"
-		 src="{{ image_name | prepend: story_path | prepend: site.asset_path }}"
-		 class="img-{{ pos }}" />
+		 src="{{ image_path | prepend: site.asset_path }}"
+		 class="img-{{ pos }} enlargeable-image"
+         data-src="{{ image_path | prepend: 'w_2880,c_limit/' | prepend: site.asset_path }}"
+         style="cursor: pointer;" />
 	{% endif %}
 {% endfor %}
 </div>

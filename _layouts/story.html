@@ -1,5 +1,7 @@
 ---
 layout: default_noheader
+custom_footer:
+- story_script.html
 ---
 {% assign story_path = page.imgdir | prepend: "stories/" |  append: "/" %}
 {% assign dev_path = page.imgdir | prepend: "stories/" | prepend: site.dev_asset_path | append: "/" %}
@@ -11,7 +13,10 @@ layout: default_noheader
     {% if dev_path_exists == "true" and jekyll.environment == "development" %}
       {% assign cover_path = page.cover | prepend: dev_path | prepend: "/" | append: '.jpg' %}
       <img src = "{{ cover_path }}"
-           width = "100vw" />
+           width = "100vw"
+           class="enlargeable-image"
+           data-src="{{ cover_path }}"
+           style="cursor: pointer;" />
     {% else %}
       {% assign cover_path = page.cover | prepend: story_path | append: '.jpg' %}
       <img srcset = "{{ cover_path | prepend: 'w_2880,c_limit/' | prepend: site.asset_path }}  2880w,
@@ -21,6 +26,9 @@ layout: default_noheader
                      {{ cover_path | prepend: 'w_420,c_limit/' | prepend: site.asset_path }}   420w"
            sizes = "100vw"
            src = "{{ cover_path | prepend: 'v1/' | prepend: 'w_1920,c_limit/' | prepend: site.asset_path }}"
+           class="enlargeable-image"
+           data-src="{{ cover_path | prepend: 'w_2880,c_limit/' | prepend: site.asset_path }}"
+           style="cursor: pointer;"
       />
     {% endif %}
       <div class="overlay">
@@ -98,6 +106,14 @@ layout: default_noheader
   <article class="story-content">
     {{ content }}
   </article>
+
+  <!-- Image Overlay -->
+  <div id="image-overlay" style="display:none;">
+      <div class="overlay-close">&times;</div>
+      <img id="overlay-image" src="" alt="Enlarged view" />
+  </div>
+
+</div>
 
   <div class="footnotes">
   {% if page.camera %}

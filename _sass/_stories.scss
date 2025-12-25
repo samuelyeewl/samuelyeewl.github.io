@@ -134,6 +134,11 @@
         height: 100%;
         width: 100%;
         position: absolute;
+        pointer-events: none;
+    }
+
+    .story-info {
+        pointer-events: auto;
     }
 
     .story-title {
@@ -301,4 +306,39 @@
     background: #ccc;
     width: 20%;
     margin: 2% auto 0% auto;
+}
+
+/* Image Overlay Styles */
+#image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.overlay-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 10000;
+    font-family: sans-serif;
+    line-height: 1;
 }
