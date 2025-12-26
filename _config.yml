@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 name: Samuel Yee
-email: samuel.yee@cfa.harvard.edu
+email: syee@astro.ucla.edu
 description: > 
   Samuel Yee's webpage.
 footer_text: >
@@ -104,8 +104,8 @@ scholar:
   style: apa
   locale: en
 
-  sort_by: year
-  order: descending
+  sort_by: year, month
+  order: descending, descending
 
   source: /_bibliography/
   bibliography: papers.bib
