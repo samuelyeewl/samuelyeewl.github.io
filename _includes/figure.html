@@ -1,5 +1,15 @@
+{% assign src = include.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url %}
+{% assign ext = include.image | split: '.' | last | downcase %}
 <figure class="{{ include.width }} {{ include.align }}">
-	<img src="{{ include.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
+	{% if ext == 'mp4' or ext == 'webm' or ext == 'mov' or ext == 'm4v' %}
+		{% if ext == 'webm' %}{% assign mime = 'video/webm' %}{% else %}{% assign mime = 'video/mp4' %}{% endif %}
+		<video controls playsinline preload="metadata"{% if include.autoplay %} autoplay muted loop{% endif %}{% if include.poster %} poster="{{ include.poster | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}"{% endif %}>
+			<source src="{{ src }}" type="{{ mime }}">
+			Your browser does not support embedded video. <a href="{{ src }}">Download the movie</a>.
+		</video>
+	{% else %}
+		<img src="{{ src }}">
+	{% endif %}
 	{% if include.caption %}
 		<figcaption>{{ include.caption }}</figcaption>
 	{% endif %}
