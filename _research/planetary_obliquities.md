@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Planetary Obliquities
-order: 4
+order: 5
+published: false
 ---
 
 {% include figure.html image="orbital_precession.png" caption="The presence of an inclined long-period outer planet can lead to secular precession of the inner planet's orbit, putting the short-period planet on a polar orbit." width="one" align="right" %} 
